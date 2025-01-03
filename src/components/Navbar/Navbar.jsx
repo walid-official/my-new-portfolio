@@ -51,7 +51,7 @@ const Navbar = () => {
           {links}
             </ul>
           </div>
-          <div className="w-16 h-16 rounded-full boxShadow shadow-2xl"><img src={navLogo} alt="" /></div>
+          <div className="w-16 h-16 rounded-full boxShadow shadow-2xl"><img className="w-full" src={navLogo} alt="" /></div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal space-x-4 text-white px-1">
