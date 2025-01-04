@@ -3,22 +3,22 @@ import navLogo from "../../assets/images/logo.png"
 const Navbar = () => {
   const links = (
     <>
-      <li className="bg-[#24272c] boxShadow rounded-lg shadow-2xl">
+      <li className="bg-[#24272c]  rounded-lg shadow-2xl">
         <a>Home</a>
       </li>
-      <li className="bg-[#24272c] boxShadow rounded-lg shadow-2xl">
+      <li className="bg-[#24272c]  rounded-lg shadow-2xl">
         <a>About</a>
       </li>
-      <li className="bg-[#24272c] boxShadow rounded-lg shadow-2xl">
+      <li className="bg-[#24272c]  rounded-lg shadow-2xl">
         <a>Service</a>
       </li>
-      <li className="bg-[#24272c] boxShadow rounded-lg shadow-2xl">
+      <li className="bg-[#24272c]  rounded-lg shadow-2xl">
         <a>Skills</a>
       </li>
-      <li className="bg-[#24272c] boxShadow rounded-lg shadow-2xl">
+      <li className="bg-[#24272c]  rounded-lg shadow-2xl">
         <a>Project</a>
       </li>
-      <li className="bg-[#24272c] boxShadow rounded-lg shadow-2xl">
+      <li className="bg-[#24272c]  rounded-lg shadow-2xl">
         <a>Contact</a>
       </li>
     </>
