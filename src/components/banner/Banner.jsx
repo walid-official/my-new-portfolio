@@ -4,15 +4,24 @@ import { TypeAnimation } from "react-type-animation";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { RiGithubLine } from "react-icons/ri";
+import { motion } from "motion/react";
 const Banner = () => {
   return (
     <div> 
       <div className="h-screen w-11/12 mx-auto text-white">
         <div className="flex items-center h-screen flex-row-reverse justify-around ">
-          <div className=" shadow-2xl boxShadow">
-            <img src={bannerImg} className="max-w-md rounded-lg shadow-2xl" />
-          </div>
-          <div className="boxShadow p-8 w-[50%] flex flex-col justify-center items-center">
+          <motion.div 
+           animate={{ y: 20, x: 30 }}
+           transition={{
+             duration: 3,
+             ease: "easeInOut",
+             repeat: Infinity,
+             repeatType: "reverse",
+           }}
+          className=" shadow-2xl boxShadow">
+            <img src={bannerImg} className="max-w-lg rounded-lg shadow-2xl" />
+          </motion.div>
+          <div className="boxShadow p-10 w-[50%] flex flex-col justify-center items-center">
             <div className="flex gap-6 items-center pb-4">
               {/* <div className="w-10 h-1 bg-black boxShadow"></div> */}
               <h2 className="font-semibold text-xl px-4 py-2">Welcome to My World</h2>
@@ -35,12 +44,10 @@ const Banner = () => {
               repeat={Infinity}
             />
            </div>
-            <p className="py-4 w-[80%] text-center">
+            <p className="py-4 w-[80%] font-semibold text-center">
               Frontend MERN Stack Developer skilled in React, JavaScript, and responsive design. I create user-friendly web applications with clean code and efficient full-stack solutions
             </p>
-            {/* <button className="btn bg-[#286fe8] border-none shadow-2xl boxShadow text-white">
-              Get Started
-            </button> */}
+           
             <div className="flex gap-4">
               <div className="boxShadow w-10 h-10 rounded-full flex justify-center items-center">
                 <a href=""><FaLinkedinIn></FaLinkedinIn></a>
@@ -51,10 +58,10 @@ const Banner = () => {
               <div className="boxShadow w-10 h-10 rounded-full flex justify-center items-center">
                 <a href=""> <RiGithubLine></RiGithubLine></a>
               </div>
-              
-             
-            
             </div>
+            {/* <button className=" px-8 py-3 rounded-lg my-4 border-none shadow-2xl boxShadow text-white">
+              Get Started
+            </button> */}
           </div>
         </div>
       </div>
