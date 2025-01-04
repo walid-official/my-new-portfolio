@@ -3,12 +3,8 @@ import aboutImg from "../../assets/images/about2.png";
 const About = () => {
   return (
     <div className="w-11/12 mx-auto">
-      <div className="boxShadow w-[20%] mx-auto p-6">
+      <div className="boxShadow w-[20%] border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 rounded-full mx-auto p-6">
         <h2 className="font-bold text-4xl text-center text-white">About Me</h2>
-        {/* <p className="text-center py-4 text-white ">
-          I design and develop seamless web applications with a focus on
-          performance and usability.
-        </p> */}
       </div>
 
       <div className="flex py-20">
@@ -20,7 +16,7 @@ const About = () => {
         <div className="w-[50%] flex justify-start">
           <div className="">
             <ul className="timeline  timeline-vertical">
-              <li>
+              <li className="">
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -35,9 +31,9 @@ const About = () => {
                     />
                   </svg>
                 </div>
-                <div className="timeline-start shadow-2xl  boxShadow">
+                <div className="timeline-start border-l-2 border-blue-400 shadow-2xl  boxShadow">
                   {/* First Macintosh computer */}
-                  <div className="boxShadow bg-[#21242b] shadow-2xl text-white border-none  p-6">
+                  <div className="boxShadow rounded-xl bg-[#21242b] shadow-2xl text-white border-none  p-6">
                     I am a passionate Web Developer specializing in React.js
                     with over 1 year of experience in Front-End Development and
                     expertise in the MERN stack (MongoDB, Express.js, React.js,
@@ -64,7 +60,7 @@ const About = () => {
                     />
                   </svg>
                 </div>
-                <div className="timeline-end shadow-2xl boxShadow">
+                <div className="timeline-end border-r-2 border-blue-400 shadow-2xl boxShadow">
                   {/* First Macintosh computer */}
                   <p className="boxShadow bg-[#21242b] shadow-2xl text-white border-none  p-6">
                     While my primary focus has been on front-end development,
@@ -94,9 +90,9 @@ const About = () => {
                     />
                   </svg>
                 </div>
-                <div className="timeline-start shadow-2xl boxShadow">
+                <div className="timeline-start border-l-2 border-blue-400 shadow-2xl boxShadow">
                   {/* First Macintosh computer */}
-                  <p className="boxShadow bg-[#21242b] shadow-2xl text-white border-none  p-6">
+                  <p className="boxShadow   bg-[#21242b] shadow-2xl text-white border-none  p-6">
                     In addition to my expertise in JavaScript and React.js, I am
                     proficient in technologies like TypeScript, Redux, and
                     Next.js, enabling me to develop scalable and maintainable
