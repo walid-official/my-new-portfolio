@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co.com/tcj7MmY/Screenshot-2025-01-04-154119.png",
+      "name": "Educational Service",
+      "description": "A platform designed to connect students with qualified tutors, offering tools to schedule personalized sessions and share educational resources. It supports learning with features like progress tracking, interactive discussions, and access to study materials, catering to diverse educational needs.",
+  "frontEndDescription": "Built with React.js, includes a dynamic course catalog, user dashboards, and responsive design.",
+  "backEndDescription": "Implemented with Node.js and MongoDB, featuring user authentication, role-based access control, and resource management."
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co.com/hCgh9C0/Screenshot-2025-01-04-175343.png",
+      "name": "Job Finder",
+     "description": "A platform that helps job seekers connect with employers, browse job listings, and apply for positions. It offers advanced search filters, personalized recommendations, and essential resources like resume tools and career advice, making the job search process more efficient and empowering for both seekers and employers.",
+  "frontEndDescription": "Developed using Next.js for server-side rendering, featuring user-friendly navigation, job filters, and responsive design.",
+  "backEndDescription": "Utilizes Firebase for authentication and Firestore for managing job postings, user profiles, and applications."
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co.com/FmJjN0X/Screenshot-2025-01-04-185622.png",
+      "name": "Coffee Shop Manager",
+      "description": "A platform for coffee enthusiasts to discover local coffee shops, explore different brewing methods, and connect with fellow coffee lovers. It offers reviews, brewing tips, and a community space for sharing experiences and growing a shared passion for coffee.",
+      "frontEndDescription": "Developed using Next.js for server-side rendering, featuring an intuitive coffee shop locator, recipe guides, and responsive design.",
+      "backEndDescription": "Utilizes Firebase for authentication and Firestore for managing user reviews, coffee shop data, and personalized recommendations."
+    }
+  ]
+  

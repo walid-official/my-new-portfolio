@@ -8,10 +8,11 @@ import mongoImg from "../../assets/images/skills/mongo.png";
 import nodejsImg from "../../assets/images/skills/nodejs.png";
 import expressImg from "../../assets/images/skills/exjs.png";
 import firebaseImg from "../../assets/images/skills/firebase.png";
+import jwtImg from "../../assets/images/skills/jwt.png";
 const Skill = () => {
   return (
     <div className="w-11/12 mx-auto">
-      <div className="boxShadow w-[20%] border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 rounded-full mx-auto p-6">
+      <div className="boxShadow lg:w-[20%] md:w-[40%] sm:w-[80%] border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 rounded-full mx-auto p-6">
         <h2 className="font-bold text-4xl  text-center text-white">
           My Skills
         </h2>
@@ -85,7 +86,7 @@ const Skill = () => {
               </div>
               <div className="text-white">
                 <h2 className="font-bold text-center text-2xl py-4">
-                  React Architect
+                  React Developer
                 </h2>
                 <p className="text-center font-medium">
                   Proficient in React for building dynamic, responsive, and
@@ -156,6 +157,21 @@ const Skill = () => {
                 </h2>
                 <p className="text-center font-medium">
                 Proficient in Express.js for developing robust, high-performance web applications. Experienced in building RESTful APIs, managing server-side routing, and ensuring seamless integration with databases and front-end technologies.
+                </p>
+              </div>
+            </div>
+
+
+            <div className="boxShadow p-10">
+            <div className="boxShadow w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
+              <img className="w-32" src={jwtImg} alt="" />
+            </div>
+              <div className="text-white">
+                <h2 className="font-bold text-center text-2xl py-4">
+                JWT  Specialist
+                </h2>
+                <p className="text-center font-medium">
+                Proficient in implementing JSON Web Tokens (JWT) for secure, stateless authentication and authorization in web applications. Experienced in generating, signing, and verifying JWTs to facilitate trusted communication between clients and servers.
                 </p>
               </div>
             </div>
