@@ -61,24 +61,28 @@
     "id": 3,
     "image": "https://i.ibb.co.com/FmJjN0X/Screenshot-2025-01-04-185622.png",
     "fullImg": "https://i.ibb.co.com/thNcGdb/Fire-Shot-Capture-003-Vite-React-localhost.png",
+    "liveLink": "https://coffee-store8809.surge.sh/",
+    "clientLink": "https://github.com/walid-official/coffee-store/tree/main/coffee-store-client",
+    "serverLink": "https://github.com/walid-official/coffee-store/tree/main/coffee-store-server",
     "name": "Coffee Shop Manager",
     "description": "A platform for coffee enthusiasts to discover local coffee shops, explore different brewing methods, and connect with fellow coffee lovers. It offers reviews, brewing tips, and a community space for sharing experiences and growing a shared passion for coffee.",
-    "frontEndDescription": [
-      "The client-side of the service-sharing web application is designed with user experience and responsiveness at its core. It includes a smooth and intuitive interface for users to interact with the application. The user interface is built using React and styled with Tailwind CSS, ensuring a sleek and modern design. Users can register and log in via both email/password authentication and Google social login, allowing for quick access. Once logged in, users can manage their own services, add new services, and update or delete existing ones. Additionally, they can browse services posted by others and book them with ease.",
-      "Dynamic routing is implemented using React Router to navigate between different pages, ensuring a seamless experience. Private routes are utilized to protect sensitive pages, such as service management, by requiring authentication. The application is fully responsive, making it easily accessible across multiple devices, including mobile phones, tablets, and desktops. Features like a theme toggle for light/dark mode and a dynamic title component enhance the user experience by offering customization options.",
-      "The search system helps users find services quickly, and loading spinners provide feedback during data processing to keep users informed. Pagination is incorporated to manage large datasets and avoid overwhelming the interface. The client-side is built to be user-friendly and efficient, focusing on simplicity and functionality."
-    ],
-    "backEndDescription": ["On the server side, the application is powered by Node.js with Express to handle requests, process data, and manage interactions between the client and the database. The server is responsible for managing user authentication and securing private routes with JWT (JSON Web Token) authentication. This ensures that only authorized users can access sensitive functionalities, such as adding, updating, or deleting services, and booking services from others.",
-    
-    "The server interacts with a MongoDB database, which stores user profiles, service details, bookings, and other application data. The database is structured to handle a variety of service types and related information, supporting efficient queries and data retrieval. RESTful API endpoints are defined to manage CRUD operations for services and bookings, with appropriate validation and error handling to maintain data integrity.",
-    
-    "The server also manages user sessions, ensuring that authentication tokens are correctly handled for secure communication between the client and the server. It supports the creation, retrieval, updating, and deletion of service records, and processes booking requests by verifying availability and ensuring smooth transactions. Additionally, the server provides search functionality, allowing users to query services based on specific criteria."],
-    "improvement": ["To improve the service-sharing web application, several key enhancements can be implemented to boost performance, user experience, and scalability.","Firstly, enhancing user authentication by integrating multi-factor authentication (MFA) would ensure safer logins, providing an extra layer of security. This would protect user data and reduce the risk of unauthorized access.",
-    
-    "Additionally, refining role-based access control (RBAC) can give administrators more flexibility in managing permissions, creating a more secure platform for service providers and regular users. It would allow the application to enforce different permissions for different types of users, ensuring that sensitive actions are restricted to the right people..",
-    
-    "On the client side, implementing WebSockets can enable real-time notifications, keeping users updated on service bookings or new service posts instantly without the need for page refreshes. This feature would make the platform more dynamic, improving the responsiveness and interaction for users.","Adding a rating and review system will foster trust among users, encouraging them to provide feedback on services they’ve used, and allowing service providers to make improvements. User reviews are crucial for ensuring the credibility of services and creating a community-driven platform.","Improving search functionality with advanced filters for criteria such as location, price, and rating will make it easier for users to find the most relevant services. This will enhance the user experience by providing them with more control over the search process and helping them find services that meet their exact needs.",
-    
-    "Finally, optimizing the app’s performance by implementing lazy loading for images and other resources will improve the overall speed of the platform. By loading only the essential content initially, users will experience faster load times and smoother navigation across the platform. This performance improvement will ensure users have a seamless and efficient experience."]
-  }
+   "frontEndDescription": [
+    "The client-side of the coffee shop manager application is built with a focus on providing a seamless and engaging user experience. Developed using React and styled with Tailwind CSS, it delivers a modern, responsive interface that adapts to various devices. Users can log in to manage daily operations, track orders, and monitor inventory levels.",
+    "Key features include a dynamic dashboard that displays real-time sales data, inventory alerts, and order statuses. The platform also offers an employee management system where managers can schedule shifts and track staff performance. Customers can place orders online, view the menu, and leave feedback through an interactive portal.",
+    "React Router is employed for smooth navigation, with private routes ensuring secure access to managerial features. The application includes customizable themes, allowing users to switch between light and dark modes, enhancing the overall user experience."
+  ],
+  "backEndDescription": [
+    "The server-side of the coffee shop manager application is powered by Node.js with Express, providing robust backend support for all business operations. Secure user authentication is handled using JWT, ensuring that sensitive data remains protected and only accessible to authorized personnel.",
+    "The backend is integrated with a MongoDB database that stores data on inventory, orders, employees, and customer feedback. It supports CRUD operations for managing these entities, with RESTful API endpoints facilitating efficient data handling. Robust validation and error handling are in place to maintain data integrity and ensure reliable performance.",
+    "The server also includes features like automatic inventory updates based on sales, real-time order notifications, and analytics generation. These capabilities enable managers to make informed decisions and respond quickly to operational needs."
+  ],
+  "improvement": [
+    "Several enhancements can be made to the coffee shop manager application to further improve its functionality and user engagement.",
+    "Integrating multi-factor authentication (MFA) will enhance security, ensuring that user accounts are well-protected. This additional security measure will help safeguard sensitive business information and user data.",
+    "Adding advanced analytics capabilities, such as sales forecasting and customer behavior analysis, can provide deeper insights, helping managers to optimize their operations and improve customer satisfaction.",
+    "Introducing a loyalty program with points tracking and rewards can enhance customer engagement and retention, encouraging repeat business and building a loyal customer base.",
+    "Improving the inventory management system with features like automated reordering based on usage trends will help prevent stockouts and reduce waste. This will streamline inventory control and ensure that popular items are always available.",
+    "Optimizing performance through techniques like lazy loading and code splitting will enhance the application's speed and responsiveness, ensuring a smooth user experience even as the user base and data volume grow."
+  ]
+}
 ]
