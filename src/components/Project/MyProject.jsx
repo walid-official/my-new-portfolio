@@ -4,9 +4,11 @@ import { DiMongodb } from "react-icons/di";
 import { SiExpress } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { RiGithubLine } from "react-icons/ri";
+import { NavLink } from "react-router-dom";
 
 const MyProject = ({ project }) => {
-  const { name, image, description } = project || {};
+  const { name, image, description,id,liveLink,clientLink,serverLink } = project || {};
   return (
     <div className="card boxShadow  shadow-xl">
       <figure>
@@ -43,11 +45,34 @@ const MyProject = ({ project }) => {
             </div>
           </div>
         </div>
-        <p className="text-black">{description}</p>
-        <div className="card-actions justify-start">
-          <button className="boxShadow px-10 py-3 rounded-full text-black shadow-2xl">
-            Live link
-          </button>
+        <p className="text-black py-3">{description}</p>
+        <div className="flex justify-between">
+          <div className="card-actions justify-start">
+            <div className="flex gap-2">
+              <a href={liveLink} target="_blank" className="boxShadow px-5 py-3 rounded-full text-black shadow-2xl">
+                Live link
+              </a>
+              <NavLink to={`DetailsProject/${id}`} className="boxShadow px-5 py-3 rounded-full text-black shadow-2xl">
+                Read More
+              </NavLink>
+            </div>
+          </div>
+          <div className="flex gap-2">
+            <div className="boxShadow rounded-full cursor-pointer">
+              <a href={clientLink} target="_blank" className="flex items-center px-7 py-3">
+                {" "}
+                <RiGithubLine></RiGithubLine>
+                Client
+              </a>
+            </div>
+            <div className="boxShadow rounded-full cursor-pointer">
+              <a href={serverLink} target="_blank" className="flex items-center px-7 py-3">
+                {" "}
+                <RiGithubLine></RiGithubLine>
+                Server
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

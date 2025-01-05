@@ -10,7 +10,10 @@ const Main = () => {
       <div className="sticky top-0 z-10 backdrop-blur-0 bg-gradient-to-r from-[#bebebe] to-[#ffffff]">
         <Navbar></Navbar>
       </div>
+      <div className="min-h-[600px]">
+
       <Outlet></Outlet>
+      </div>
       <Footer></Footer>
     </div>
   );

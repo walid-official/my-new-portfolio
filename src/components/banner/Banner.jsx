@@ -58,7 +58,7 @@ const Banner = () => {
                   1000, // wait 1s before replacing "Mice" with "Hamsters"
                   "A Frontend Web Developer",
                   1000,
-                  "A MERN Web Developer",
+                  "A MERN Stack Developer",
                   1000,
                 ]}
                 wrapper="span"
