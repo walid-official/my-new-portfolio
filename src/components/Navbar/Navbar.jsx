@@ -38,34 +38,34 @@ const Navbar = () => {
     <>
       <li
         onClick={homeScroll}
-        className="bg-[#24272c] boxShadow py-2 px-4   rounded-full shadow-2xl"
+        className="boxShadow py-2 px-4 text-black font-medium   rounded-full shadow-2xl"
       >
         <a>Home</a>
       </li>
       <li
         onClick={aboutScroll}
-        className="bg-[#24272c] boxShadow py-2 px-4  rounded-full shadow-2xl"
+        className="boxShadow py-2 px-4 text-black font-medium  rounded-full shadow-2xl"
       >
         <a>About</a>
       </li>
-      {/* <li className="bg-[#24272c] boxShadow py-2 px-4  rounded-full shadow-2xl">
+      {/* <li className="boxShadow py-2 px-4 text-black font-medium  rounded-full shadow-2xl">
         <a>Service</a>
       </li> */}
       <li
         onClick={skillScroll}
-        className="bg-[#24272c] boxShadow py-2 px-4  rounded-full shadow-2xl"
+        className="boxShadow py-2 px-4 text-black font-medium  rounded-full shadow-2xl"
       >
         <a>Skills</a>
       </li>
       <li
         onClick={myProjectScroll}
-        className="bg-[#24272c] boxShadow py-2 px-4  rounded-full shadow-2xl"
+        className="boxShadow py-2 px-4 text-black font-medium  rounded-full shadow-2xl"
       >
         <a>Project</a>
       </li>
       <li
         onClick={contactScroll}
-        className="bg-[#24272c] boxShadow py-2 px-4  rounded-full shadow-2xl"
+        className="boxShadow py-2 px-4 text-black font-medium  rounded-full shadow-2xl"
       >
         <a>Contact</a>
       </li>
@@ -80,7 +80,7 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost text-white lg:hidden"
+              className="btn btn-ghost text-black lg:hidden"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -99,17 +99,17 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content text-white  bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content text-black  bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               {links}
             </ul>
           </div>
-          <div className="w-16 h-16 rounded-full boxShadow shadow-2xl">
+          <div className="sm:w-16 sm:h-16 w-14 h-14 rounded-full bg-gradient-to-r from-blue-500 via-[#84abd7] to-[#597ca4] shadow-2xl">
             <img className="w-full" src={navLogo} alt="" />
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal space-x-4 text-white px-1">
+          <ul className="menu menu-horizontal space-x-4 text-black px-1">
             {links}
           </ul>
         </div>
@@ -117,7 +117,7 @@ const Navbar = () => {
           <a
             href="https://docs.google.com/document/d/1cC_a_sEV_LUGmUvdnXGFEXXkNLDcnkuhn3G3prfDc6k/export?format=docx"
             download
-            className="px-8 py-4 rounded-full shadow-2xl bg-[#191c21] text-white border-none"
+            className="sm:px-8 px-4 sm:py-4 py-2 rounded-full shadow-2xl boxShadow text-black border-none"
           >
             Download Cv
           </a>

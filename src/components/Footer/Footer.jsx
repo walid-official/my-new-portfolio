@@ -6,7 +6,7 @@ import { RiGithubLine } from "react-icons/ri";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-center border-t-2 text-primary-content p-10">
+      <footer className="footer bg-[#21242b] footer-center border-t-2 text-primary-content p-10">
         <aside>
           <div className="w-20 h-20 rounded-full flex justify-center items-center boxShadow">
             <img className="" src={footerLogo} alt="" />
@@ -20,7 +20,7 @@ const Footer = () => {
         </aside>
         <nav>
           <div className="grid grid-flow-col gap-4">
-            <div className="flex gap-4">
+            <div className="flex gap-4 text-black">
               <div className="boxShadow w-12 h-12 rounded-full flex justify-center items-center">
                 <a href="">
                   <FaLinkedinIn></FaLinkedinIn>

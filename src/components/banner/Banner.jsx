@@ -19,8 +19,8 @@ const Banner = () => {
   };
 
   return (
-    <div >
-      <div className="lg:h-screen w-11/12 mx-auto text-white">
+    <div className="py-10">
+      <div className="lg:h-screen w-11/12 mx-auto text-black">
         <div className="lg:flex items-center lg:h-screen flex-row-reverse justify-around ">
           <div
             //  animate={{ y: 20, x: 30 }}
@@ -30,27 +30,27 @@ const Banner = () => {
             //    repeat: Infinity,
             //    repeatType: "reverse",
             //  }}
-            className="shadow-2xl bg-[#21242b] boxShadow"
+            className="shadow-2xl  boxShadow"
           >
             <img
               src={bannerImg}
               className="lg:max-w-lg w-full rounded-lg shadow-2xl"
             />
           </div>
-          <div className="boxShadow bg-[#21242b] p-10 lg:w-[50%] flex flex-col justify-center items-center">
+          <div className="boxShadow  text-black  p-10 lg:w-[50%] flex flex-col justify-center items-center">
             <div className="flex gap-6 items-center pb-4">
               {/* <div className="w-10 h-1 bg-black boxShadow"></div> */}
-              <h2 className="font-semibold text-xl px-4 py-2">
+              <h2 className="font-semibold text-center text-xl px-4 py-2">
                 Welcome to My World
               </h2>
             </div>
-            <h1 className="text-5xl font-bold">
+            <h1 className="sm:text-5xl text-xl text-center font-bold">
               Hi,👋I'm{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-[#84abd7] to-[#597ca4]">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[rgb(77,160,255)]  to-[#0f70df]">
                 Walid Hasan
               </span>
             </h1>
-            <div className="py-3">
+            <div className="py-3 text-center">
               <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed out once, initially
@@ -63,7 +63,7 @@ const Banner = () => {
                 ]}
                 wrapper="span"
                 speed={50}
-                style={{ fontSize: "1.5em" }}
+                style={{ fontSize: "1.5em",textAlign: "center"}}
                 repeat={Infinity}
               />
             </div>
@@ -91,7 +91,7 @@ const Banner = () => {
               clean code and efficient full-stack solutions
             </p>
             <a href="https://docs.google.com/document/d/1cC_a_sEV_LUGmUvdnXGFEXXkNLDcnkuhn3G3prfDc6k/export?format=docx"
-            download className=" px-8 py-3 rounded-lg my-4 border-none shadow-2xl boxShadow text-white">
+            download className=" px-8 py-3 rounded-lg my-4 border-none shadow-2xl boxShadow">
               Hire Me
             </a>
           </div>

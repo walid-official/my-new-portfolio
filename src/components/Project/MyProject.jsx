@@ -8,14 +8,14 @@ import { motion } from "framer-motion";
 const MyProject = ({ project }) => {
   const { name, image, description } = project || {};
   return (
-    <div className="card boxShadow shadow-xl">
+    <div className="card boxShadow  shadow-xl">
       <figure>
         <img className="" src={image} alt="Shoes" />
       </figure>
       <div className="card-body">
         <div className="md:flex justify-between">
-          <h2 className="card-title text-white font-bold text-2xl">{name}</h2>
-          <div className="flex gap-2 space-y-3 md:space-y-0 text-white">
+          <h2 className="card-title text-black font-bold text-2xl">{name}</h2>
+          <div className="flex gap-2 space-y-3 md:space-y-0 text-black">
             <div className="pt-3 md:pt-0">
               <motion.div
                 className="boxShadow flex justify-center items-center w-10 h-10 rounded-full"
@@ -43,9 +43,9 @@ const MyProject = ({ project }) => {
             </div>
           </div>
         </div>
-        <p className="text-white">{description}</p>
+        <p className="text-black">{description}</p>
         <div className="card-actions justify-start">
-          <button className="boxShadow px-10 py-3 rounded-full text-white shadow-2xl">
+          <button className="boxShadow px-10 py-3 rounded-full text-black shadow-2xl">
             Live link
           </button>
         </div>
