@@ -36,10 +36,10 @@ const DetailsProject = () => {
   return (
     <div className="w-11/12 mx-auto py-10">
       <div className="md:flex gap-10">
-        <div className="w-[50%]">
+        <div className="md:w-[50%]">
           <img src={fullImg} alt="" />
         </div>
-        <div className="w-[50%]">
+        <div className="md:w-[50%] pt-10 md:pt-0">
           <h2 className="font-bold text-4xl">{name}</h2>
           <p className="font-medium py-4">{description}</p>
           <div className="">

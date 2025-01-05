@@ -46,26 +46,26 @@ const MyProject = ({ project }) => {
           </div>
         </div>
         <p className="text-black py-3">{description}</p>
-        <div className="flex justify-between">
-          <div className="card-actions justify-start">
-            <div className="flex gap-2">
-              <a href={liveLink} target="_blank" className="boxShadow px-5 py-3 rounded-full text-black shadow-2xl">
+        <div className="lg:flex justify-between">
+          <div className="">
+            <div className=" space-y-4">
+              <a href={liveLink} target="_blank" className="boxShadow block text-center px-5 py-3 rounded-full text-black shadow-2xl">
                 Live link
               </a>
-              <NavLink to={`DetailsProject/${id}`} className="boxShadow px-5 py-3 rounded-full text-black shadow-2xl">
+              <NavLink to={`DetailsProject/${id}`} className="boxShadow block text-center px-5 py-3 rounded-full text-black shadow-2xl">
                 Read More
               </NavLink>
             </div>
           </div>
-          <div className="flex gap-2">
-            <div className="boxShadow rounded-full cursor-pointer">
+          <div className="mt-10 lg:mt-0 space-y-4  gap-2">
+            <div className="boxShadow  flex justify-center rounded-full cursor-pointer">
               <a href={clientLink} target="_blank" className="flex items-center px-7 py-3">
                 {" "}
                 <RiGithubLine></RiGithubLine>
                 Client
               </a>
             </div>
-            <div className="boxShadow rounded-full cursor-pointer">
+            <div className="boxShadow flex justify-center rounded-full cursor-pointer">
               <a href={serverLink} target="_blank" className="flex items-center px-7 py-3">
                 {" "}
                 <RiGithubLine></RiGithubLine>
