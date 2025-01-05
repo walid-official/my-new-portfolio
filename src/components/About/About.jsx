@@ -2,6 +2,8 @@ import React from "react";
 import aboutImg from "../../assets/images/about2.png";
 const About = () => {
   return (
+    <div className="">
+
     <div className="w-11/12 mx-auto">
       <div className="boxShadow lg:w-[20%] md:w-[40%] sm:w-[80%] border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 rounded-full mx-auto p-6">
         <h2 className="font-bold text-4xl text-center text-white">About Me</h2>
@@ -9,7 +11,7 @@ const About = () => {
 
       <div className="lg:flex py-20">
         <div className="lg:w-[50%] flex justify-center items-center  mask mask-circle">
-          <div className="boxShadow">
+          <div className="boxShadow bg-[#21242b]">
             <img src={aboutImg} alt="" />
           </div>
         </div>
@@ -148,6 +150,7 @@ const About = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -12,16 +12,16 @@ import jwtImg from "../../assets/images/skills/jwt.png";
 const Skill = () => {
   return (
     <div className="w-11/12 mx-auto">
-      <div className="boxShadow lg:w-[20%] md:w-[40%] sm:w-[80%] border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 rounded-full mx-auto p-6">
+      <div className="boxShadow bg-[#21242b] lg:w-[20%] md:w-[40%] sm:w-[80%] border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 rounded-full mx-auto p-6">
         <h2 className="font-bold text-4xl  text-center text-white">
           My Skills
         </h2>
       </div>
       <div className=" py-20">
         <div className=" ">
-          <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
-            <div className="boxShadow p-10">
-              <div className="boxShadow w-40 h-40 mx-auto  border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
+          <div className="grid shadow-2xl lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
+            <div className="boxShadow bg-[#21242b] p-10">
+              <div className="boxShadow bg-[#21242b] w-40 h-40 mx-auto  border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
                 <img className="w-24" src={htmlImg} alt="" />
               </div>
               <div className="text-white">
@@ -36,8 +36,8 @@ const Skill = () => {
               </div>
             </div>
 
-            <div className="boxShadow p-10">
-              <div className="boxShadow w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
+            <div className="boxShadow bg-[#21242b] p-10">
+              <div className="boxShadow bg-[#21242b] w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
                 <img className="w-24" src={cssImg} alt="" />
               </div>
               <div className="text-white">
@@ -52,8 +52,8 @@ const Skill = () => {
               </div>
             </div>
 
-            <div className="boxShadow p-10">
-              <div className="boxShadow w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
+            <div className="boxShadow bg-[#21242b] p-10">
+              <div className="boxShadow bg-[#21242b] w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
                 <img className="w-24" src={tailwindImg} alt="" />
               </div>
               <div className="text-white">
@@ -66,8 +66,8 @@ const Skill = () => {
               </div>
             </div>
 
-            <div className="boxShadow p-10">
-              <div className="boxShadow w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
+            <div className="boxShadow bg-[#21242b] p-10">
+              <div className="boxShadow bg-[#21242b] w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
                 <img className="w-24" src={jsImg} alt="" />
               </div>
               <div className="text-white">
@@ -80,8 +80,8 @@ const Skill = () => {
               </div>
             </div>
 
-            <div className="boxShadow p-10">
-              <div className="boxShadow w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
+            <div className="boxShadow bg-[#21242b] p-10">
+              <div className="boxShadow bg-[#21242b] w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
                 <img className="w-24" src={reactImg} alt="" />
               </div>
               <div className="text-white">
@@ -97,8 +97,8 @@ const Skill = () => {
               </div>
             </div>
 
-            <div className="boxShadow p-10">
-              <div className="boxShadow w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
+            <div className="boxShadow bg-[#21242b] p-10">
+              <div className="boxShadow bg-[#21242b] w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
                 <img className="w-24" src={mongoImg} alt="" />
               </div>
 
@@ -114,8 +114,8 @@ const Skill = () => {
 
            
 
-            <div className="boxShadow p-10">
-            <div className="boxShadow w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
+            <div className="boxShadow bg-[#21242b] p-10">
+            <div className="boxShadow bg-[#21242b] w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
               <img className="w-24" src={nodejsImg} alt="" />
             </div>
               <div className="text-white">
@@ -130,8 +130,8 @@ const Skill = () => {
 
 
 
-            <div className="boxShadow p-10">
-            <div className="boxShadow w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
+            <div className="boxShadow bg-[#21242b] p-10">
+            <div className="boxShadow bg-[#21242b] w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
               <img className="w-24" src={firebaseImg} alt="" />
             </div>
               <div className="text-white">
@@ -147,8 +147,8 @@ const Skill = () => {
 
 
             
-            <div className="boxShadow p-10">
-            <div className="boxShadow w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
+            <div className="boxShadow bg-[#21242b] p-10">
+            <div className="boxShadow bg-[#21242b] w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
               <img className="w-32" src={expressImg} alt="" />
             </div>
               <div className="text-white">
@@ -162,8 +162,8 @@ const Skill = () => {
             </div>
 
 
-            <div className="boxShadow p-10">
-            <div className="boxShadow w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
+            <div className="boxShadow bg-[#21242b] p-10">
+            <div className="boxShadow bg-[#21242b] w-40 h-40 mx-auto border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 flex justify-center items-center shadow-2xl rounded-full">
               <img className="w-32" src={jwtImg} alt="" />
             </div>
               <div className="text-white">

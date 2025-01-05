@@ -1,27 +1,40 @@
-import  { useRef } from "react";
+import { useRef } from "react";
 import contactImg from "../../assets/images/world.png";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-    const form = useRef();
-    const sendEmail = (e) => {
-        e.preventDefault();
-        emailjs.sendForm("service_zkobzwh", "template_kvl3fu6", form.current, "n9eOVgGeK1V5CpTT0")
-        .then(
-          (result) => {
-            console.log("SUCCESS!", result.text);
-            alert("Email sent successfully!");
-          },
-          (error) => {
-            console.error("FAILED...", error.text);
-            alert("Failed to send the email. Please try again later.");
-          }
-        );
-    }
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_zkobzwh",
+        "template_kvl3fu6",
+        form.current,
+        "n9eOVgGeK1V5CpTT0"
+      )
+      .then(
+        (result) => {
+          console.log("SUCCESS!", result.text);
+          alert("Email sent successfully!");
+        },
+        (error) => {
+          console.error("FAILED...", error.text);
+          alert("Failed to send the email. Please try again later.");
+        }
+      );
+  };
 
   return (
     <div className="overflow-x-hidden">
+      <div className="pt-20">
+        <div className="boxShadow lg:w-[30%] md:w-[40%] sm:w-[80%] border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 rounded-full mx-auto p-6">
+          <h2 className="font-bold text-4xl text-center text-white">
+            Get In Touch
+          </h2>
+        </div>
+      </div>
       <div className="hero min-h-screen">
         <div className="hero-content text-white flex-col lg:flex-row-reverse">
           <div className="w-[55%] flex justify-center items-center">
