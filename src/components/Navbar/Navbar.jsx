@@ -1,5 +1,10 @@
 import React from "react";
 import navLogo from "../../assets/images/logo.png";
+import { IoHome } from "react-icons/io5";
+import { FaPersonDotsFromLine } from "react-icons/fa6";
+import { GiSkills } from "react-icons/gi";
+import { FaProjectDiagram } from "react-icons/fa";
+import { MdContactMail } from "react-icons/md";
 const Navbar = () => {
   const homeScroll = () => {
     const targetSection = document.getElementById("home");
@@ -38,36 +43,39 @@ const Navbar = () => {
     <>
       <li
         onClick={homeScroll}
-        className="boxShadow py-2 px-4 text-black font-medium   rounded-full shadow-2xl"
+        className="text-black tooltip tooltip-left  hover:cursor-pointer font-medium bg-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center "
+        data-tip="Home"
       >
-        <a>Home</a>
+        <i className="font-bold text-2xl block"><IoHome></IoHome></i> 
       </li>
       <li
         onClick={aboutScroll}
-        className="boxShadow py-2 px-4 text-black font-medium  rounded-full shadow-2xl"
+        className="text-black hover:cursor-pointer tooltip tooltip-left font-medium bg-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center"
+        data-tip="About"
       >
-        <a>About</a>
+        
+        <i className="font-bold text-2xl block"><FaPersonDotsFromLine></FaPersonDotsFromLine></i> 
       </li>
-      {/* <li className="boxShadow py-2 px-4 text-black font-medium  rounded-full shadow-2xl">
-        <a>Service</a>
-      </li> */}
       <li
         onClick={skillScroll}
-        className="boxShadow py-2 px-4 text-black font-medium  rounded-full shadow-2xl"
+        className="text-black  tooltip tooltip-left hover:cursor-pointer font-medium bg-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center"
+        data-tip="Skill"
       >
-        <a>Skills</a>
+        <i className="font-bold text-2xl block"><GiSkills></GiSkills></i> 
       </li>
       <li
         onClick={myProjectScroll}
-        className="boxShadow py-2 px-4 text-black font-medium  rounded-full shadow-2xl"
+        className="text-black tooltip tooltip-left hover:cursor-pointer font-medium bg-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center"
+         data-tip="Project"
       >
-        <a>Project</a>
+        <i className="font-bold text-2xl block"><FaProjectDiagram></FaProjectDiagram></i> 
       </li>
       <li
         onClick={contactScroll}
-        className="boxShadow py-2 px-4 text-black font-medium  rounded-full shadow-2xl"
+        className="text-black tooltip tooltip-left hover:cursor-pointer font-medium bg-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center"
+        data-tip="Contact"
       >
-        <a>Contact</a>
+        <i className="font-bold text-2xl block"><MdContactMail></MdContactMail></i> 
       </li>
     </>
   );
@@ -99,28 +107,16 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content text-black  bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content text-black z-[1] mt-3 w-52 p-2 shadow"
             >
               {links}
             </ul>
           </div>
-          <div className="sm:w-16 sm:h-16 w-14 h-14 rounded-full bg-gradient-to-r from-blue-500 via-[#84abd7] to-[#597ca4] shadow-2xl">
-            <img className="w-full" src={navLogo} alt="" />
-          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal space-x-4 text-black px-1">
+          <ul className="text-black space-y-4 px-1">
             {links}
           </ul>
-        </div>
-        <div className="navbar-end">
-          <a
-            href="https://docs.google.com/document/d/1cC_a_sEV_LUGmUvdnXGFEXXkNLDcnkuhn3G3prfDc6k/export?format=docx"
-            download
-            className="sm:px-8 px-4 sm:py-4 py-2 rounded-full shadow-2xl boxShadow text-black border-none"
-          >
-            Download Cv
-          </a>
         </div>
       </div>
     </div>

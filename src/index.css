@@ -5,8 +5,9 @@
 
 body{
     font-family: "Public Sans", serif;
+    overflow-x: hidden;
 }
 
-.boxShadow{
+/* .boxShadow{
     box-shadow: inset 21px 21px 19px #bebebe, inset -21px -21px 19px #ffff;
-}
+} */

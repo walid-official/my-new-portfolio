@@ -1,156 +1,220 @@
 import React from "react";
 import aboutImg from "../../assets/images/about2.png";
+import about1 from "../../assets/images/abouts/about1.png";
+import { motion } from "framer-motion";
 const About = () => {
   return (
     <div className="">
+      <div className="w-11/12 mx-auto">
+        <div className="boxShadow mt-6  lg:w-[20%] md:w-[40%] sm:w-[80%] border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 rounded-full mx-auto p-6">
+          <h2 className="font-bold text-4xl text-center text-black">
+            About Me
+          </h2>
+        </div>
+        <div className="lg:flex justify-center py-20">
+          <div className="space-y-4">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0px 8px 20px rgba(0, 102, 255, 0.3)",
+              }}
+              transition={{ duration: 0.5 }}
+              className="relative bg-white border-2 rounded-lg shadow-xl p-6 max-w-md mx-auto overflow-hidden"
+            >
+              {/* Animated Border */}
+              <motion.div
+                initial={{ width: "0%" }}
+                animate={{ width: "100%" }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                }}
+                className="absolute top-0 left-0 h-1 bg-blue-500"
+              ></motion.div>
 
-    <div className="w-11/12 mx-auto">
-      <div className="boxShadow  lg:w-[20%] md:w-[40%] sm:w-[80%] border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 rounded-full mx-auto p-6">
-        <h2 className="font-bold text-4xl text-center text-black">About Me</h2>
-      </div>
+              {/* Animated Decorative Shapes */}
+              <motion.div
+                initial={{ x: -50, y: -50 }}
+                animate={{
+                  x: [0, 100, 100, 0, -100, -100, 0],
+                  y: [0, -100, 100, 100, 0, -100, -100],
+                  rotate: [0, 90, 180, 270, 360],
+                }}
+                transition={{
+                  duration: 10,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                className="absolute w-16 h-16 bg-blue-500 rounded-full opacity-20"
+              ></motion.div>
 
-      <div className="lg:flex py-20">
-        <div className="lg:w-[50%] flex justify-center items-center  mask mask-circle">
-          <div className="boxShadow ">
-            <img src={aboutImg} alt="" />
+              <motion.div
+                initial={{ x: 50, y: 50 }}
+                animate={{
+                  x: [0, -100, -100, 0, 100, 100, 0],
+                  y: [0, 100, -100, -100, 0, 100, 100],
+                  rotate: [0, 90, 180, 270, 360],
+                }}
+                transition={{
+                  duration: 12,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                className="absolute w-24 h-24 bg-blue-400 rounded-full opacity-10"
+              ></motion.div>
+
+              {/* Text Section */}
+              <div className="relative z-10">
+                <h2 className="text-2xl font-bold text-[#000] mb-3">
+                  Frontend Developer | React.js
+                </h2>
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  I am a dedicated Front-End Developer with over a year of
+                  experience specializing in React.js. I excel at building
+                  dynamic, responsive, and user-centric web applications,
+                  ensuring seamless performance and modern design.
+                </p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0px 8px 20px rgba(0, 102, 255, 0.3)",
+              }}
+              transition={{ duration: 0.5 }}
+              className="relative bg-white border-2 rounded-lg shadow-xl p-6 max-w-md mx-auto overflow-hidden"
+            >
+              {/* Animated Left Border */}
+              <motion.div
+                initial={{ height: "0%" }}
+                animate={{ height: "100%" }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                }}
+                className="absolute top-0 left-0 w-1 bg-blue-500"
+              ></motion.div>
+
+              {/* Animated Decorative Shapes */}
+              <motion.div
+                initial={{ x: -50, y: -50 }}
+                animate={{
+                  x: [0, 100, 100, 0, -100, -100, 0],
+                  y: [0, -100, 100, 100, 0, -100, -100],
+                  rotate: [0, 90, 180, 270, 360],
+                }}
+                transition={{
+                  duration: 10,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                className="absolute w-16 h-16 bg-blue-500 rounded-full opacity-20"
+              ></motion.div>
+
+              <motion.div
+                initial={{ x: 50, y: 50 }}
+                animate={{
+                  x: [0, -100, -100, 0, 100, 100, 0],
+                  y: [0, 100, -100, -100, 0, 100, 100],
+                  rotate: [0, 90, 180, 270, 360],
+                }}
+                transition={{
+                  duration: 12,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                className="absolute w-24 h-24 bg-blue-400 rounded-full opacity-10"
+              ></motion.div>
+
+              {/* Text Section */}
+              <div className="relative z-10">
+                <h2 className="text-2xl font-bold text-[#000] mb-3">
+                  Backend Developer | Node.js
+                </h2>
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  I am a skilled Backend Developer specializing in Node.js,
+                  focused on building scalable, secure, and high-performance
+                  server-side applications. I excel at optimizing APIs,
+                  databases, and backend logic for seamless functionality.
+                </p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0px 8px 20px rgba(0, 102, 255, 0.3)",
+              }}
+              transition={{ duration: 0.5 }}
+              className="relative bg-white border-2  rounded-lg shadow-xl p-6 max-w-md mx-auto overflow-hidden"
+            >
+              {/* Animated Right Border */}
+              <motion.div
+                initial={{ height: "0%" }}
+                animate={{ height: "100%" }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                }}
+                className="absolute top-0 right-0 w-1 bg-blue-500"
+              ></motion.div>
+
+              {/* Animated Decorative Shapes */}
+              <motion.div
+                initial={{ x: -50, y: -50 }}
+                animate={{
+                  x: [0, 100, 100, 0, -100, -100, 0],
+                  y: [0, -100, 100, 100, 0, -100, -100],
+                  rotate: [0, 90, 180, 270, 360],
+                }}
+                transition={{
+                  duration: 10,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                className="absolute w-16 h-16 bg-blue-500 rounded-full opacity-20"
+              ></motion.div>
+
+              <motion.div
+                initial={{ x: 50, y: 50 }}
+                animate={{
+                  x: [0, -100, -100, 0, 100, 100, 0],
+                  y: [0, 100, -100, -100, 0, 100, 100],
+                  rotate: [0, 90, 180, 270, 360],
+                }}
+                transition={{
+                  duration: 12,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                className="absolute w-24 h-24 bg-blue-400 rounded-full opacity-10"
+              ></motion.div>
+
+              {/* Text Section */}
+              <div className="relative z-10">
+                <h2 className="text-2xl font-bold text-[#000] mb-3">
+                  Web Developer | Next.js
+                </h2>
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  I am a dedicated Web Developer specializing in Next.js,
+                  passionate about building fast, scalable, and SEO-friendly web
+                  applications. I focus on creating seamless user experiences
+                  with efficient server-side rendering and modern front-end
+                  technologies.
+                </p>
+              </div>
+            </motion.div>
           </div>
         </div>
-        <div className="lg:w-[50%] flex justify-start">
-          <div className="">
-            <ul className="md:timeline hidden md:timeline-vertical">
-              <li className="">
-                <div className="timeline-middle">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="text-black"
-                    className="h-5 w-5 bg-white rounded-full"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div className="timeline-start border-l-2 border-blue-400 shadow-2xl  boxShadow">
-                  {/* First Macintosh computer */}
-                  <div className="boxShadow rounded-xl shadow-2xl text-black border-none  p-6">
-                    I am a passionate Web Developer specializing in React.js
-                    with over 1 year of experience in Front-End Development and
-                    expertise in the MERN stack (MongoDB, Express.js, React.js,
-                    Node.js). My journey in web development is fueled by a
-                    strong commitment to crafting efficient, responsive, and
-                    user-friendly applications.
-                  </div>
-                </div>
-                <hr className="" />
-              </li>
-              <li>
-                <hr />
-                <div className="timeline-middle">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="text-black"
-                    className="h-5 w-5 bg-white rounded-full"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div className="timeline-end border-r-2 border-blue-400 shadow-2xl mr-5 boxShadow">
-                  {/* First Macintosh computer */}
-                  <p className="boxShadow  shadow-2xl text-black border-none  p-6">
-                    While my primary focus has been on front-end development,
-                    building visually appealing and highly interactive user
-                    interfaces, I am equally excited about diving deeper into
-                    back-end development. The prospect of designing robust APIs,
-                    optimizing server-side logic, and ensuring seamless
-                    communication between the front and back ends truly excites
-                    me.
-                  </p>
-                </div>
-                <hr />
-              </li>
-              <li>
-                <hr />
-                <div className="timeline-middle">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="text-black"
-                    className="h-5 w-5 bg-white rounded-full"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div className="timeline-start border-l-2 border-blue-400 shadow-2xl boxShadow">
-                  {/* First Macintosh computer */}
-                  <p className="boxShadow shadow-2xl text-black border-none  p-6">
-                    In addition to my expertise in JavaScript and React.js, I am
-                    proficient in technologies like TypeScript, Redux, and
-                    Next.js, enabling me to develop scalable and maintainable
-                    front-end applications. On the back-end side, I am
-                    continually expanding my skills with tools such as Mongoose,
-                    DBMS, SQL, PostgreSQL, Prisma, and GraphQL to create
-                    dynamic, database-driven applications.
-                  </p>
-                </div>
-                <hr />
-              </li>
-              <li>
-                <hr />
-              </li>
-            </ul>
-            <div className="md:hidden flex flex-col py-10">
-              <div className="timeline-start border-l-2 border-blue-400 shadow-2xl  boxShadow">
-                {/* First Macintosh computer */}
-                <div className="boxShadow rounded-xl shadow-2xl text-black border-none  p-6">
-                  I am a passionate Web Developer specializing in React.js with
-                  over 1 year of experience in Front-End Development and
-                  expertise in the MERN stack (MongoDB, Express.js, React.js,
-                  Node.js). My journey in web development is fueled by a strong
-                  commitment to crafting efficient, responsive, and
-                  user-friendly applications.
-                </div>
-              </div>
-              <div className="timeline-start border-l-2 border-blue-400 shadow-2xl  boxShadow">
-                {/* First Macintosh computer */}
-                <div className="boxShadow rounded-xl shadow-2xl text-black border-none  p-6">
-                  While my primary focus has been on front-end development,
-                  building visually appealing and highly interactive user
-                  interfaces, I am equally excited about diving deeper into
-                  back-end development. The prospect of designing robust APIs,
-                  optimizing server-side logic, and ensuring seamless
-                  communication between the front and back ends truly excites
-                  me.
-                </div>
-              </div>
-              <div className="border-l-2 border-blue-400 shadow-2xl  boxShadow">
-                {/* First Macintosh computer */}
-                <div className="boxShadow rounded-xl shadow-2xl text-black border-none  p-6">
-                  In addition to my expertise in JavaScript and React.js, I am
-                  proficient in technologies like TypeScript, Redux, and
-                  Next.js, enabling me to develop scalable and maintainable
-                  front-end applications. On the back-end side, I am continually
-                  expanding my skills with tools such as Mongoose, DBMS, SQL,
-                  PostgreSQL, Prisma, and GraphQL to create dynamic,
-                  database-driven applications.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
     </div>
   );
 };
