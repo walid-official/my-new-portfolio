@@ -12,8 +12,8 @@ const About = () => {
           </h2>
         </div>
         <div className="lg:flex justify-center py-20">
-          <div className="grid grid-cols-4 gap-4">
-            <div className="mt-40">
+          <div className="grid grid-cols-3 gap-4">
+            <div className="mt-20">
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -151,7 +151,7 @@ const About = () => {
               </motion.div>
             </div>
 
-            <div className="mt-40">
+            <div className="mt-20">
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -216,72 +216,6 @@ const About = () => {
                     web applications. I focus on creating seamless user
                     experiences with efficient server-side rendering and modern
                     front-end technologies.
-                  </p>
-                </div>
-              </motion.div>
-            </div>
-
-            <div className="">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: "0px 8px 20px rgba(0, 102, 255, 0.3)",
-                }}
-                transition={{ duration: 0.5 }}
-                className="relative bg-white border-2 rounded-lg shadow-xl p-6 max-w-md mx-auto overflow-hidden"
-              >
-                {/* Animated Border */}
-                <motion.div
-                  initial={{ width: "0%" }}
-                  animate={{ width: "100%" }}
-                  transition={{
-                    duration: 1.5,
-                    repeat: Infinity,
-                    repeatType: "reverse",
-                  }}
-                  className="absolute top-0 left-0 h-1 bg-blue-500"
-                ></motion.div>
-
-                {/* Animated Decorative Shapes */}
-                <motion.div
-                  initial={{ x: -50, y: -50 }}
-                  animate={{
-                    x: [0, 100, 100, 0, -100, -100, 0],
-                    y: [0, -100, 100, 100, 0, -100, -100],
-                    rotate: [0, 90, 180, 270, 360],
-                  }}
-                  transition={{
-                    duration: 10,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                  className="absolute w-16 h-16 bg-blue-500 rounded-full opacity-20"
-                ></motion.div>
-
-                <motion.div
-                  initial={{ x: 50, y: 50 }}
-                  animate={{
-                    x: [0, -100, -100, 0, 100, 100, 0],
-                    y: [0, 100, -100, -100, 0, 100, 100],
-                    rotate: [0, 90, 180, 270, 360],
-                  }}
-                  transition={{
-                    duration: 12,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                  className="absolute w-24 h-24 bg-blue-400 rounded-full opacity-10"
-                ></motion.div>
-
-                {/* Text Section */}
-                <div className="relative z-10">
-                  <h2 className="text-2xl font-bold text-[#000] mb-3">
-                    Full stack Developer | MERN stack
-                  </h2>
-                  <p className="text-gray-700 text-lg leading-relaxed">
-                  I am a versatile Full-Stack Developer specializing in the MERN stack. I excel at building scalable, high-performance web applications with seamless front-end and back-end integration. Passionate about clean code, optimized APIs, and delivering user-friendly experiences.
                   </p>
                 </div>
               </motion.div>
