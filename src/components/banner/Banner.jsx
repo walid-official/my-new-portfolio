@@ -182,7 +182,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="fixed bottom-8 right-0">
+      <div className="fixed bottom-8 right-0 z-10">
         <Navbar></Navbar>
       </div>
     </div>
