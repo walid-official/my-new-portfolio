@@ -3,14 +3,14 @@ import bannerImg from "../../assets/images/walid.png";
 import util1 from "../../assets/images/skills/html.png";
 import util2 from "../../assets/images/skills/js.png";
 import util3 from "../../assets/images/skills/react-banner.png";
-import util4 from "../../assets/images/skills/css.png";
+import util4 from "../../assets/images/skills/tailwind.png";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { RiGithubLine } from "react-icons/ri";
 import Navbar from "../Navbar/Navbar";
-
+import "./banner.css";
 const Banner = () => {
   const handleLinkdin = () => {
     window.open("https://www.linkedin.com/in/walidhasan87", "_blank");
@@ -114,8 +114,12 @@ const Banner = () => {
               </h2> */}
             </div>
             {/* bg-clip-text text-transparent bg-gradient-to-r from-[rgb(77,160,255)]  to-[#0f70df] */}
-            <h1 className="sm:text-5xl text-xl text-center font-bold">
-              Hi,👋I'm <span className="">Walid Hasan</span>
+            <h1 className="text-center font-extrabold text-xl sm:text-5xl md:text-4xl lg:text-5xl leading-tight tracking-wide">
+              Hi, <span className="text-blue-600 drop-shadow-lg">👋</span> I'm
+              <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600">
+                {" "}
+                Walid Hasan
+              </span>
             </h1>
             <div className="py-3 text-center">
               <TypeAnimation

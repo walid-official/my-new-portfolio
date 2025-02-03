@@ -1,6 +1,7 @@
 import React from "react";
 import aboutImg from "../../assets/images/about2.png";
-import about1 from "../../assets/images/abouts/about1.png";
+import nodeJs from "../../assets/images/skills/nodejs.png"
+import reactJs from "../../assets/images/skills/react.png"
 import { motion } from "framer-motion";
 const About = () => {
   return (
@@ -69,6 +70,9 @@ const About = () => {
 
                 {/* Text Section */}
                 <div className="relative z-10">
+                  <div className="">
+                    <img src={nodeJs} className="w-20" alt="" />
+                  </div>
                   <h2 className="text-2xl font-bold text-[#000] mb-3">
                     Backend Developer | Node.js
                   </h2>
@@ -137,6 +141,9 @@ const About = () => {
 
                 {/* Text Section */}
                 <div className="relative z-10">
+                <div className="">
+                    <img src={reactJs} className="w-20" alt="" />
+                  </div>
                   <h2 className="text-2xl font-bold text-[#000] mb-3">
                     Frontend Developer | React.js
                   </h2>
@@ -207,6 +214,9 @@ const About = () => {
 
                 {/* Text Section */}
                 <div className="relative z-10">
+                <div className="">
+                    <img src="https://images.seeklogo.com/logo-png/44/2/next-js-icon-logo-png_seeklogo-449825.png" className="w-20" alt="" />
+                  </div>
                   <h2 className="text-2xl font-bold text-[#000] mb-3">
                     Web Developer | Next.js
                   </h2>
