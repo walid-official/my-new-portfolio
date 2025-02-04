@@ -25,7 +25,7 @@ const Banner = () => {
 
   return (
     <div className="relative">
-      <div className="absolute right-80 top-40 rotate-12">
+      <div className="absolute right-80 top-40 rotate-12 -z-10">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -42,7 +42,7 @@ const Banner = () => {
           alt=""
         />
       </div>
-      <div className="absolute left-80 top-60 rotate-12">
+      <div className="absolute left-80 top-60 rotate-12 -z-10">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -58,7 +58,7 @@ const Banner = () => {
           alt=""
         />
       </div>
-      <div className="absolute left-[400px] top-[460px] rotate-12">
+      <div className="absolute left-[400px] top-[460px] rotate-12 -z-10">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -74,7 +74,7 @@ const Banner = () => {
           alt=""
         />
       </div>
-      <div className="absolute right-[400px] top-[460px] rotate-12">
+      <div className="absolute right-[400px] top-[460px] rotate-12 -z-10">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -93,13 +93,14 @@ const Banner = () => {
       </div>
       <div className="lg:h-screen w-11/12 mx-auto">
         <div className="lg:flex items-center lg:h-screen flex-row-reverse justify-around ">
-          <div className="   p-10 lg:w-[50%] flex flex-col justify-center items-center">
-            <div className="flex gap-2 items-center absolute top-10 z-10 ">
-              <h1 className="font-bold text-8xl text-white drop-shadow-[2px_2px_0px_black]">
+          <div className="   p-10 lg:w-[70%] w-[90%] flex flex-col justify-center items-center">
+            <div className="flex gap-2 items-center" data-aos="slide-right" data-aos-mirror="false"  data-aos-once="false">
+              <h1 className="font-bold md:text-6xl text-4xl lg:text-7xl text-white drop-shadow-[4px_4px_8px_rgba(0,0,0,0.6)]">
                 Web Developer
               </h1>
             </div>
-            <div className="mt-28">
+           
+            <div className="mt-4" data-aos="slide-down" data-aos-mirror="false"  data-aos-once="false">
               <img
                 className="w-28 h-28 rounded-full object-cover"
                 src={bannerImg}
@@ -107,14 +108,9 @@ const Banner = () => {
               />
             </div>
             <div className="flex gap-6 items-center pb-4">
-              {/* <div className="w-10 h-1 bg-black boxShadow"></div> */}
-
-              {/* <h2 className="font-semibold text-center text-xl px-4 py-2">
-                Welcome to My World
-              </h2> */}
             </div>
             {/* bg-clip-text text-transparent bg-gradient-to-r from-[rgb(77,160,255)]  to-[#0f70df] */}
-            <h1 className="text-center font-extrabold text-xl sm:text-5xl md:text-4xl lg:text-5xl leading-tight tracking-wide">
+            <h1   className="text-center font-extrabold text-xl sm:text-5xl md:text-4xl lg:text-5xl leading-tight tracking-wide" data-aos="slide-up" data-aos-mirror="false"  data-aos-once="false">
               Hi, <span className="text-blue-600 drop-shadow-lg">👋</span> I'm
               <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600">
                 {" "}
@@ -165,7 +161,7 @@ const Banner = () => {
                 </a>
               </div>
             </div>
-            <p className="py-4 w-[80%] font-semibold text-center">
+            <p className="py-4 w-[60%] font-semibold text-center">
               Frontend MERN Stack Developer skilled in React, JavaScript, and
               responsive design. I create user-friendly web applications with
               clean code and efficient full-stack solutions

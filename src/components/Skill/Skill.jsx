@@ -388,8 +388,6 @@ const Skill = () => {
               {/* 90 Percentage */}
               <p className="mt-2 text-gray-600 font-semibold">{65}% Mastery</p>
             </motion.div>
-
-
           </div>
         </div>
       </div>

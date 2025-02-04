@@ -13,8 +13,8 @@ const About = () => {
           </h2>
         </div>
         <div className="lg:flex justify-center py-20">
-          <div className="grid grid-cols-3 gap-4">
-            <div className="mt-20">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
+            <div className="lg:mt-20">
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -158,7 +158,7 @@ const About = () => {
               </motion.div>
             </div>
 
-            <div className="mt-20">
+            <div className="lg:mt-20">
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
