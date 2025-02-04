@@ -1,14 +1,53 @@
 import React from "react";
 import aboutImg from "../../assets/images/about2.png";
-import nodeJs from "../../assets/images/skills/nodejs.png"
-import reactJs from "../../assets/images/skills/react.png"
+import nodeJs from "../../assets/images/skills/nodejs.png";
+import reactJs from "../../assets/images/skills/react.png";
 import { motion } from "framer-motion";
 const About = () => {
   return (
     <div className="">
       <div className="w-11/12 mx-auto">
-        <div className="boxShadow mt-6  lg:w-[20%] md:w-[40%] sm:w-[80%] border-l-blue-400 border-r-blue-400 border-2 border-t-0 border-b-0 rounded-full mx-auto p-6">
-          <h2 className="font-bold text-4xl text-center text-black">
+        <div
+          className="mt-6 lg:w-[20%] md:w-[40%] sm:w-[80%] mx-auto p-6 relative overflow-hidden group"
+          style={{
+            background:
+              "linear-gradient(145deg, rgba(255,255,255,0.9), rgba(229,231,235,0.9))",
+            boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.2)",
+            borderLeft: "4px solid rgba(59, 130, 246, 0.8)",
+            borderRight: "4px solid rgba(59, 130, 246, 0.8)",
+            borderRadius: "9999px",
+            transform: "perspective(1000px)",
+          }}
+        >
+          {/* Glow Effect */}
+          <div
+            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            style={{
+              background:
+                "radial-gradient(circle at center, rgba(59, 130, 246, 0.2), transparent 70%)",
+            }}
+          ></div>
+
+          {/* Animated Border */}
+          <div
+            className="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-blue-400 transition-all duration-500"
+            style={{
+              animation: "spin 5s linear infinite",
+            }}
+          ></div>
+
+          {/* Title */}
+          <h2
+            className="font-bold text-4xl text-center text-black relative z-10"
+            style={{
+              background:
+                "linear-gradient(45deg, rgba(59, 130, 246, 1), rgba(147, 51, 234, 1))",
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              color: "transparent",
+              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
+            }}
+          >
             About Me
           </h2>
         </div>
@@ -141,7 +180,7 @@ const About = () => {
 
                 {/* Text Section */}
                 <div className="relative z-10">
-                <div className="">
+                  <div className="">
                     <img src={reactJs} className="w-20" alt="" />
                   </div>
                   <h2 className="text-2xl font-bold text-[#000] mb-3">
@@ -214,8 +253,12 @@ const About = () => {
 
                 {/* Text Section */}
                 <div className="relative z-10">
-                <div className="">
-                    <img src="https://images.seeklogo.com/logo-png/44/2/next-js-icon-logo-png_seeklogo-449825.png" className="w-20" alt="" />
+                  <div className="">
+                    <img
+                      src="https://images.seeklogo.com/logo-png/44/2/next-js-icon-logo-png_seeklogo-449825.png"
+                      className="w-20"
+                      alt=""
+                    />
                   </div>
                   <h2 className="text-2xl font-bold text-[#000] mb-3">
                     Web Developer | Next.js

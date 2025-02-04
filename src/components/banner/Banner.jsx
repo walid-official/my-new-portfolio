@@ -25,7 +25,7 @@ const Banner = () => {
 
   return (
     <div className="relative">
-      <div className="absolute right-80 top-40 rotate-12 -z-10">
+      <div className="absolute right-80 top-40 rotate-12 ">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -42,7 +42,7 @@ const Banner = () => {
           alt=""
         />
       </div>
-      <div className="absolute left-80 top-60 rotate-12 -z-10">
+      <div className="absolute left-80 top-60 rotate-12 ">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -58,7 +58,7 @@ const Banner = () => {
           alt=""
         />
       </div>
-      <div className="absolute left-[400px] top-[460px] rotate-12 -z-10">
+      <div className="absolute left-[400px] top-[460px] rotate-12 ">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -74,7 +74,7 @@ const Banner = () => {
           alt=""
         />
       </div>
-      <div className="absolute right-[400px] top-[460px] rotate-12 -z-10">
+      <div className="absolute right-[400px] top-[460px] rotate-12 ">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -93,30 +93,96 @@ const Banner = () => {
       </div>
       <div className="lg:h-screen w-11/12 mx-auto">
         <div className="lg:flex items-center lg:h-screen flex-row-reverse justify-around ">
-          <div className="   p-10 lg:w-[70%] w-[90%] flex flex-col justify-center items-center">
-            <div className="flex gap-2 items-center" data-aos="slide-right" data-aos-mirror="false"  data-aos-once="false">
-              <h1 className="font-bold md:text-6xl text-4xl lg:text-7xl text-white drop-shadow-[4px_4px_8px_rgba(0,0,0,0.6)]">
+          <div className="  p-10 lg:w-[70%] w-[90%] flex flex-col justify-center items-center">
+            <div
+              className="flex gap-2 items-center relative"
+              data-aos="slide-right"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <h1
+                className="font-extrabold text-4xl md:text-6xl lg:text-7xl text-transparent bg-clip-text transition-all duration-500 ease-in-out"
+                style={{
+                  background:
+                    "linear-gradient(45deg, rgba(59, 130, 246, 1), rgba(147, 51, 234, 1))",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
+                }}
+              >
                 Web Developer
               </h1>
+
+              {/* Glow Effect on Hover */}
+              <div
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                style={{
+                  background:
+                    "radial-gradient(circle, rgba(75, 85, 99, 0.3), transparent 80%)",
+                }}
+              ></div>
             </div>
-           
-            <div className="mt-4" data-aos="slide-down" data-aos-mirror="false"  data-aos-once="false">
-              <img
-                className="w-28 h-28 rounded-full object-cover"
-                src={bannerImg}
-                alt=""
-              />
-            </div>
-            <div className="flex gap-6 items-center pb-4">
-            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              whileHover={{ scale: 1.1 }}
+              className="mt-4 relative flex justify-center"
+              data-aos="slide-down"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              {/* Animated Border */}
+              <div className="relative w-36 h-36 rounded-full p-[3px] shadow-2xl border-[3px] border-transparent animate-border-gradient">
+                {/* Profile Image */}
+                <motion.img
+                  className="w-full h-full rounded-full object-cover shadow-lg border-4 border-white"
+                  src={bannerImg}
+                  alt="Profile"
+                  whileHover={{ scale: 1.05, rotate: 2 }}
+                />
+              </div>
+            </motion.div>
+
+            <div className="flex gap-6 items-center pb-4"></div>
             {/* bg-clip-text text-transparent bg-gradient-to-r from-[rgb(77,160,255)]  to-[#0f70df] */}
-            <h1   className="text-center font-extrabold text-xl sm:text-5xl md:text-4xl lg:text-5xl leading-tight tracking-wide" data-aos="slide-up" data-aos-mirror="false"  data-aos-once="false">
-              Hi, <span className="text-blue-600 drop-shadow-lg">👋</span> I'm
-              <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600">
+            <h1
+              className="text-center transition-all duration-500 font-extrabold text-xl sm:text-5xl md:text-4xl lg:text-5xl leading-tight tracking-wide relative"
+              data-aos="slide-up"
+              data-aos-mirror="false"
+              data-aos-once="false"
+              // style={{
+              //   background:
+              //     "linear-gradient(45deg, rgba(59, 130, 246, 1), rgba(147, 51, 234, 1))",
+              //   WebkitBackgroundClip: "text",
+              //   backgroundClip: "text",
+              //   color: "transparent",
+              //   textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
+              // }}
+            >
+              Hi,{" "}
+              <span className="inline-block text-blue-600 drop-shadow-lg animate-waving-hand">
+                👋
+              </span>{" "}
+              I'm
+              <span
+                className="relative transition-all duration-500 ease-in-out hover:scale-105"
+                // style={{
+                //   background:
+                //     "linear-gradient(45deg, rgba(59, 130, 246, 1), rgba(147, 51, 234, 1))",
+                //   WebkitBackgroundClip: "text",
+                //   backgroundClip: "text",
+                //   color: "transparent",
+                //   textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
+                // }}
+              >
                 {" "}
                 Walid Hasan
               </span>
             </h1>
+
             <div className="py-3 text-center">
               <TypeAnimation
                 sequence={[
@@ -135,31 +201,73 @@ const Banner = () => {
               />
             </div>
             <div className="flex gap-4">
-              <div
+              {/* LinkedIn Icon */}
+              <motion.div
                 onClick={handleLinkdin}
-                className="boxShadow hover:shadow-2xl  hover:border duration-500  cursor-pointer w-12 h-12 rounded-full flex justify-center items-center"
+                className="boxShadow hover:shadow-2xl hover:border duration-500 cursor-pointer w-12 h-12 rounded-full flex justify-center items-center"
+                whileHover={{ scale: 1.1, rotate: 10 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 300 }}
               >
                 <a>
-                  <FaLinkedinIn></FaLinkedinIn>
+                  <motion.div
+                    animate={{ y: [0, -5, 0] }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  >
+                    <FaLinkedinIn className="text-xl" />
+                  </motion.div>
                 </a>
-              </div>
-              <div
+              </motion.div>
+
+              {/* Twitter Icon */}
+              <motion.div
                 onClick={handleTwitter}
-                className="boxShadow hover:shadow-2xl  hover:border duration-500  cursor-pointer w-12 h-12 rounded-full flex justify-center items-center"
+                className="boxShadow hover:shadow-2xl hover:border duration-500 cursor-pointer w-12 h-12 rounded-full flex justify-center items-center"
+                whileHover={{ scale: 1.1, rotate: -10 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 300 }}
               >
                 <a href="">
-                  <FaXTwitter></FaXTwitter>
+                  <motion.div
+                    animate={{ y: [0, -5, 0] }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                      delay: 0.5,
+                    }}
+                  >
+                    <FaXTwitter className=" text-xl" />
+                  </motion.div>
                 </a>
-              </div>
-              <div
+              </motion.div>
+
+              {/* GitHub Icon */}
+              <motion.div
                 onClick={handleGithub}
-                className="boxShadow hover:shadow-2xl  hover:border duration-500  cursor-pointer w-12 h-12 rounded-full flex justify-center items-center"
+                className="boxShadow hover:shadow-2xl hover:border duration-500 cursor-pointer w-12 h-12 rounded-full flex justify-center items-center"
+                whileHover={{ scale: 1.1, rotate: 10 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 300 }}
               >
                 <a href="">
-                  {" "}
-                  <RiGithubLine></RiGithubLine>
+                  <motion.div
+                    animate={{ y: [0, -5, 0] }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                      delay: 1,
+                    }}
+                  >
+                    <RiGithubLine className=" text-xl" />
+                  </motion.div>
                 </a>
-              </div>
+              </motion.div>
             </div>
             <p className="py-4 w-[60%] font-semibold text-center">
               Frontend MERN Stack Developer skilled in React, JavaScript, and
@@ -169,13 +277,43 @@ const Banner = () => {
             <a
               href="https://docs.google.com/document/d/1cC_a_sEV_LUGmUvdnXGFEXXkNLDcnkuhn3G3prfDc6k/export?format=docx"
               download
-              className="relative px-8 py-3 rounded-lg my-4 border-none bg-gradient-to-r from-blue-500 to-blue-700 shadow-2xl boxShadow overflow-hidden group"
+              className="relative px-8 py-3 my-4 mx-auto flex justify-center items-center overflow-hidden rounded-full border-l-4 border-r-4 border-blue-400 bg-white shadow-xl transition-all duration-500 group hover:shadow-2xl"
+              style={{
+                background:
+                  "linear-gradient(145deg, rgba(255,255,255,0.9), rgba(229,231,235,0.9))",
+                boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.2)",
+                transform: "perspective(1000px)",
+              }}
             >
-              {/* Background Sliding Effect */}
-              <span className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 w-0 group-hover:w-full transition-all duration-500 ease-in-out"></span>
+              {/* Glow Effect */}
+              <div
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                style={{
+                  background:
+                    "radial-gradient(circle at center, rgba(59, 130, 246, 0.2), transparent 70%)",
+                }}
+              ></div>
 
-              {/* Text Content */}
-              <span className="relative z-10  text-white group-hover:text-white font-semibold duration-500">
+              {/* Animated Border */}
+              <div
+                className="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-blue-400 transition-all duration-500"
+                style={{
+                  animation: "spin 5s linear infinite",
+                }}
+              ></div>
+
+              {/* Button Text */}
+              <span
+                className="relative z-10 font-bold text-lg text-black transition-all duration-500 group-hover:text-blue-600"
+                style={{
+                  background:
+                    "linear-gradient(45deg, rgba(59, 130, 246, 1), rgba(147, 51, 234, 1))",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
+                }}
+              >
                 Hire Me
               </span>
             </a>

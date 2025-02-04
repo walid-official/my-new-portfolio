@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body,html{
     font-family: "Public Sans", serif;
     overflow-x: hidden;
 }
