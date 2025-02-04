@@ -93,7 +93,7 @@ const Banner = () => {
       </div>
       <div className="lg:h-screen w-11/12 mx-auto">
         <div className="lg:flex items-center lg:h-screen flex-row-reverse justify-around ">
-          <div className="  p-10 lg:w-[70%] w-[90%] flex flex-col justify-center items-center">
+          <div className="  p-10 lg:w-[70%] w-[90%] flex flex-col justify-center items-center" >
             <div
               className="flex gap-2 items-center relative"
               data-aos="slide-right"
@@ -108,7 +108,7 @@ const Banner = () => {
                   WebkitBackgroundClip: "text",
                   backgroundClip: "text",
                   color: "transparent",
-                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
+                  textShadow: "2px 2px 20px rgba(0, 0, 20, 0.2)",
                 }}
               >
                 Web Developer
@@ -135,13 +135,14 @@ const Banner = () => {
               data-aos-once="false"
             >
               {/* Animated Border */}
-              <div className="relative w-36 h-36 rounded-full p-[3px] shadow-2xl border-[3px] border-transparent animate-border-gradient">
+              <div className="relative w-36 h-36 rounded-full p-[3px] shadow-2xl border-[3px] border-transparent animate-border-gradient" style={{ boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)" }}>
                 {/* Profile Image */}
                 <motion.img
                   className="w-full h-full rounded-full object-cover shadow-lg border-4 border-white"
                   src={bannerImg}
                   alt="Profile"
                   whileHover={{ scale: 1.05, rotate: 2 }}
+                  
                 />
               </div>
             </motion.div>
@@ -205,6 +206,7 @@ const Banner = () => {
               <motion.div
                 onClick={handleLinkdin}
                 className="boxShadow hover:shadow-2xl hover:border duration-500 cursor-pointer w-12 h-12 rounded-full flex justify-center items-center"
+                // style={{ boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)" }}
                 whileHover={{ scale: 1.1, rotate: 10 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 300 }}
@@ -229,6 +231,7 @@ const Banner = () => {
                 className="boxShadow hover:shadow-2xl hover:border duration-500 cursor-pointer w-12 h-12 rounded-full flex justify-center items-center"
                 whileHover={{ scale: 1.1, rotate: -10 }}
                 whileTap={{ scale: 0.9 }}
+                // style={{ boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)" }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <a href="">
@@ -250,6 +253,7 @@ const Banner = () => {
               <motion.div
                 onClick={handleGithub}
                 className="boxShadow hover:shadow-2xl hover:border duration-500 cursor-pointer w-12 h-12 rounded-full flex justify-center items-center"
+                // style={{ boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)" }}
                 whileHover={{ scale: 1.1, rotate: 10 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 300 }}
