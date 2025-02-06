@@ -148,34 +148,75 @@ const Banner = () => {
               />
             </div>
             <div className="flex gap-4">
+              {/* LinkedIn Icon */}
               <motion.div
                 onClick={handleLinkdin}
                 className="boxShadow hover:shadow-2xl hover:border duration-500 cursor-pointer w-12 h-12 rounded-full flex justify-center items-center"
+                // style={{ boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)" }}
                 whileHover={{ scale: 1.1, rotate: 10 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <FaLinkedinIn className="text-xl" />
+                <a>
+                  <motion.div
+                    animate={{ y: [0, -5, 0] }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  >
+                    <FaLinkedinIn className="text-xl" />
+                  </motion.div>
+                </a>
               </motion.div>
 
+              {/* Twitter Icon */}
               <motion.div
                 onClick={handleTwitter}
                 className="boxShadow hover:shadow-2xl hover:border duration-500 cursor-pointer w-12 h-12 rounded-full flex justify-center items-center"
                 whileHover={{ scale: 1.1, rotate: -10 }}
                 whileTap={{ scale: 0.9 }}
+                // style={{ boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)" }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <FaXTwitter className=" text-xl" />
+                <a href="">
+                  <motion.div
+                    animate={{ y: [0, -5, 0] }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                      delay: 0.5,
+                    }}
+                  >
+                    <FaXTwitter className=" text-xl" />
+                  </motion.div>
+                </a>
               </motion.div>
 
+              {/* GitHub Icon */}
               <motion.div
                 onClick={handleGithub}
                 className="boxShadow hover:shadow-2xl hover:border duration-500 cursor-pointer w-12 h-12 rounded-full flex justify-center items-center"
+                // style={{ boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)" }}
                 whileHover={{ scale: 1.1, rotate: 10 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <RiGithubLine className=" text-xl" />
+                <a href="">
+                  <motion.div
+                    animate={{ y: [0, -5, 0] }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                      delay: 1,
+                    }}
+                  >
+                    <RiGithubLine className=" text-xl" />
+                  </motion.div>
+                </a>
               </motion.div>
             </div>
             <p className="py-4 lg:w-[55%] md:w-[70%] w-[90%] sm:w-full font-semibold text-center">
@@ -184,7 +225,7 @@ const Banner = () => {
               clean code and efficient full-stack solutions
             </p>
             <a
-              href="https://docs.google.com/document/d/1cC_a_sEV_LUGmUvdnXGFEXXkNLDcnkuhn3G3prfDc6k/export?format=docx"
+              href="https://docs.google.com/document/d/14b_OR9Y2XED0hoakPNAXwylwWegIO4EIy5Tqyq3KZV0/export?format=docx"
               download
               className="relative px-8 py-3 mt-4 mx-auto flex justify-center items-center overflow-hidden rounded-full border-l-4 border-r-4 border-blue-400 bg-white shadow-xl transition-all duration-500 group hover:shadow-2xl"
             >

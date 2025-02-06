@@ -13,15 +13,15 @@ const MyProject = ({ project }) => {
   const { name, image, description, id, liveLink, clientLink, serverLink } =
     project || {};
   return (
-    <div className="shadow-xl hover:scale-105 duration-500 rounded-md">
+    <div className="shadow-xl hover:scale-105 duration-500 rounded-md relative">
       <figure className="border-b">
         <img className="rounded-md" src={image} alt="Shoes" />
       </figure>
-      <div className="p-6">
+      <div className="p-8">
         <div className="">
           <h2 className="card-title text-black font-bold text-2xl py-4">{name}</h2>
           <div className="flex gap-2 text-black pb-4">
-            <div className="pt-3 md:pt-0">
+            <div className="">
               <motion.div
                 className=" flex justify-center items-center w-10 h-10 rounded-full"
                 animate={{
@@ -59,10 +59,10 @@ const MyProject = ({ project }) => {
               <FaLink></FaLink>
             </a>
           </div>
-          <div className="">
+          <div className="absolute md:top-60 top-36  bg-slate-600 right-0 ">
             <NavLink
               to={`DetailsProject/${id}`}
-              className=" block text-center px-5 py-3 rounded-full text-black"
+              className=" block text-center px-5 py-3 rounded-full text-white"
             >
               <FaExternalLinkAlt></FaExternalLinkAlt>
             </NavLink>

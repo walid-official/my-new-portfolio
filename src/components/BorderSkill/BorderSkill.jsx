@@ -2,7 +2,7 @@ import React from "react";
 
 const BorderSkill = () => {
   return (
-    <div className="flex justify-center items-center  p-6 mb-20 w-[85%] mx-auto">
+    <div className="flex justify-center items-center  p-6 mb-20 md:w-[85%] w-[95%] mx-auto">
       <div className="">
         <p
           className="font-bold lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-center  md:leading-normal sm:leading-normal lg:leading-normal leading-normal"
