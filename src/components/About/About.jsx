@@ -4,10 +4,12 @@ import nodeJs from "../../assets/images/skills/nodejs.png";
 import reactJs from "../../assets/images/skills/react.png";
 import { motion } from "framer-motion";
 import BorderAbout from "../BorderAbout/BorderAbout";
+import JourneyCard from "../JourneyCard/JourneyCard";
 const About = () => {
   return (
     <div className="">
       <div className="w-11/12 mx-auto">
+      
         <div
           className="mt-6 lg:w-[20%] md:w-[40%] sm:w-[80%] mx-auto p-6 relative overflow-hidden group"
           style={{
@@ -52,6 +54,9 @@ const About = () => {
             About Me
           </h2>
         </div>
+        <div className="mt-10">
+        <JourneyCard></JourneyCard>
+      </div>
         <div className="lg:flex justify-center py-20">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
             <div className="lg:mt-20">

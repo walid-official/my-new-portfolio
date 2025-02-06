@@ -69,7 +69,7 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="navbar-center">
-            <div className="hidden lg:flex justify-center gap-12">{links}</div>
+            <div className="hidden lg:flex  gap-8">{links}</div>
           </div>
 
           {/* Download CV Button (Desktop) */}

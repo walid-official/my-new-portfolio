@@ -16,87 +16,389 @@ const Skill = () => {
   return (
     <div className="w-11/12 mx-auto">
       <div
-          className="mt-6 lg:w-[20%] md:w-[40%] sm:w-[80%] mx-auto p-6 relative overflow-hidden group"
+        className="mt-6 lg:w-[20%] md:w-[40%] sm:w-[80%] mx-auto p-6 relative overflow-hidden group"
+        style={{
+          background:
+            "linear-gradient(145deg, rgba(255,255,255,0.9), rgba(229,231,235,0.9))",
+          boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.2)",
+          borderLeft: "4px solid rgba(59, 130, 246, 0.8)",
+          borderRight: "4px solid rgba(59, 130, 246, 0.8)",
+          borderRadius: "9999px",
+          transform: "perspective(1000px)",
+        }}
+      >
+        {/* Glow Effect */}
+        <div
+          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           style={{
             background:
-              "linear-gradient(145deg, rgba(255,255,255,0.9), rgba(229,231,235,0.9))",
-            boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.2)",
-            borderLeft: "4px solid rgba(59, 130, 246, 0.8)",
-            borderRight: "4px solid rgba(59, 130, 246, 0.8)",
-            borderRadius: "9999px",
-            transform: "perspective(1000px)",
+              "radial-gradient(circle at center, rgba(59, 130, 246, 0.2), transparent 70%)",
+          }}
+        ></div>
+
+        {/* Animated Border */}
+        <div
+          className="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-blue-400 transition-all duration-500"
+          style={{
+            animation: "spin 5s linear infinite",
+          }}
+        ></div>
+
+        {/* Title */}
+        <h2
+          className="font-bold text-4xl text-center text-black relative z-10"
+          style={{
+            background:
+              "linear-gradient(45deg, rgba(59, 130, 246, 1), rgba(147, 51, 234, 1))",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
           }}
         >
-          {/* Glow Effect */}
-          <div
-            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-            style={{
-              background:
-                "radial-gradient(circle at center, rgba(59, 130, 246, 0.2), transparent 70%)",
-            }}
-          ></div>
-
-          {/* Animated Border */}
-          <div
-            className="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-blue-400 transition-all duration-500"
-            style={{
-              animation: "spin 5s linear infinite",
-            }}
-          ></div>
-
-          {/* Title */}
-          <h2
-            className="font-bold text-4xl text-center text-black relative z-10"
-            style={{
-              background:
-                "linear-gradient(45deg, rgba(59, 130, 246, 1), rgba(147, 51, 234, 1))",
-              WebkitBackgroundClip: "text",
-              backgroundClip: "text",
-              color: "transparent",
-              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
-            }}
-          >
-            My Skills
-          </h2>
-        </div>
+          My Skills
+        </h2>
+      </div>
       <div className="py-20">
         <div className=" ">
-          <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
+          <div className="grid  lg:grid-cols-2 gap-20">
+            <div className="">
+              <h2 className="text-4xl pb-10 font-bold text-center">
+                Frontend Skills
+              </h2>
+              <div className="grid lg:grid-cols-3 gap-3">
+                <motion.div
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
+                  }}
+                  transition={{ duration: 0.3 }}
+                  className="p-10  rounded-xl  text-center relative overflow-hidden"
+                >
+                  {/* Animated Border Circle */}
+                  <div className="relative w-32 h-32 rounded-full mx-auto flex justify-center  items-center">
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{
+                        duration: 5,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
+                      className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
+                    ></motion.div>
+                    <img
+                      className="w-16 relative z-10"
+                      src={htmlImg}
+                      alt="html"
+                    />
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
+                  }}
+                  transition={{ duration: 0.3 }}
+                  className="p-10  rounded-xl  text-center relative overflow-hidden"
+                >
+                  {/* Animated Border Circle */}
+                  <div className="relative w-32 h-32 rounded-full shadow-2xl mx-auto flex justify-center items-center">
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{
+                        duration: 5,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
+                      className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
+                    ></motion.div>
+                    <img
+                      className="w-16 relative z-10"
+                      src={cssImg}
+                      alt="html"
+                    />
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
+                  }}
+                  transition={{ duration: 0.3 }}
+                  className="p-10  rounded-xl  text-center relative overflow-hidden"
+                >
+                  {/* Animated Border Circle */}
+                  <div className="relative w-32 h-32 rounded-full shadow-2xl mx-auto flex justify-center items-center">
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{
+                        duration: 5,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
+                      className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
+                    ></motion.div>
+                    <img
+                      className="w-16 relative z-10"
+                      src={tailwindImg}
+                      alt="html"
+                    />
+                  </div>
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
+                  }}
+                  transition={{ duration: 0.3 }}
+                  className="p-10  rounded-xl  text-center relative overflow-hidden"
+                >
+                  {/* Animated Border Circle */}
+                  <div className="relative w-32 h-32 rounded-full shadow-2xl mx-auto flex justify-center items-center">
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{
+                        duration: 5,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
+                      className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
+                    ></motion.div>
+                    <img
+                      className="w-16 relative z-10"
+                      src={jsImg}
+                      alt="html"
+                    />
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
+                  }}
+                  transition={{ duration: 0.3 }}
+                  className="p-10  rounded-xl  text-center relative overflow-hidden"
+                >
+                  {/* Animated Border Circle */}
+                  <div className="relative w-32 h-32 rounded-full shadow-2xl mx-auto flex justify-center items-center">
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{
+                        duration: 5,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
+                      className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
+                    ></motion.div>
+                    <img
+                      className="w-16 relative z-10"
+                      src={reactImg}
+                      alt="html"
+                    />
+                  </div>
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
+                  }}
+                  transition={{ duration: 0.3 }}
+                  className="p-10  rounded-xl  text-center relative overflow-hidden"
+                >
+                  {/* Animated Border Circle */}
+                  <div className="relative w-32 h-32 rounded-full shadow-2xl mx-auto flex justify-center items-center">
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{
+                        duration: 5,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
+                      className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
+                    ></motion.div>
+                    <img
+                      className="w-16 relative z-10"
+                      src="https://ih1.redbubble.net/image.2488807847.3267/st,small,507x507-pad,600x600,f8f8f8.jpg"
+                      alt="html"
+                    />
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+            <div className="">
+              <h2 className="text-4xl pb-10 font-bold text-center">
+                Backend Skills
+              </h2>
+              <div className="grid lg:grid-cols-3 gap-4">
+                <motion.div
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
+                  }}
+                  transition={{ duration: 0.3 }}
+                  className="p-10  rounded-xl  text-center relative overflow-hidden"
+                >
+                  {/* Animated Border Circle */}
+                  <div className="relative w-32 h-32 rounded-full shadow-2xl mx-auto flex justify-center items-center">
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{
+                        duration: 5,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
+                      className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
+                    ></motion.div>
+                    <img
+                      className="w-16 relative z-10"
+                      src={mongoImg}
+                      alt="html"
+                    />
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
+                  }}
+                  transition={{ duration: 0.3 }}
+                  className="p-10  rounded-xl  text-center relative overflow-hidden"
+                >
+                  {/* Animated Border Circle */}
+                  <div className="relative w-32 h-32 rounded-full shadow-2xl mx-auto flex justify-center items-center">
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{
+                        duration: 5,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
+                      className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
+                    ></motion.div>
+                    <img
+                      className="w-16 relative z-10"
+                      src={nodejsImg}
+                      alt="html"
+                    />
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
+                  }}
+                  transition={{ duration: 0.3 }}
+                  className="p-10  rounded-xl  text-center relative overflow-hidden"
+                >
+                  {/* Animated Border Circle */}
+                  <div className="relative w-32 h-32 rounded-full shadow-2xl mx-auto flex justify-center items-center">
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{
+                        duration: 5,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
+                      className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
+                    ></motion.div>
+                    <img
+                      className="w-16 relative z-10"
+                      src={firebaseImg}
+                      alt="html"
+                    />
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
+                  }}
+                  transition={{ duration: 0.3 }}
+                  className="p-10  rounded-xl  text-center relative overflow-hidden"
+                >
+                  {/* Animated Border Circle */}
+                  <div className="relative w-32 h-32 rounded-full shadow-2xl mx-auto flex justify-center items-center">
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{
+                        duration: 5,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
+                      className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
+                    ></motion.div>
+                    <img
+                      className="w-40 relative z-10"
+                      src={expressImg}
+                      alt="html"
+                    />
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
+                  }}
+                  transition={{ duration: 0.3 }}
+                  className="p-10  rounded-xl  text-center relative overflow-hidden"
+                >
+                  {/* Animated Border Circle */}
+                  <div className="relative w-32 h-32 rounded-full shadow-2xl mx-auto flex justify-center items-center">
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{
+                        duration: 5,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
+                      className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
+                    ></motion.div>
+                    <img
+                      className="w-40 relative z-10"
+                      src={jwtImg}
+                      alt="html"
+                    />
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <div className="">
+          <h2 className="text-4xl pb-10 font-bold text-center">
+            Tools
+          </h2>
+          <div className="grid lg:grid-cols-3 gap-4">
             <motion.div
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
               }}
               transition={{ duration: 0.3 }}
-              className="p-10 shadow-2xl   rounded-xl  text-center relative overflow-hidden"
+              className="p-10  rounded-xl  text-center relative overflow-hidden"
             >
               {/* Animated Border Circle */}
-              <div className="relative w-40 h-40 rounded-full mx-auto flex justify-center  items-center">
+              <div className="relative w-32 h-32 rounded-full shadow-2xl mx-auto flex justify-center items-center">
                 <motion.div
                   animate={{ rotate: 360 }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                  transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
                   className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
                 ></motion.div>
-                <img className="w-24 relative z-10" src={htmlImg} alt="html" />
+                <img className="w-16 relative z-10" src="https://cdn3d.iconscout.com/3d/free/thumb/free-git-3d-icon-download-in-png-blend-fbx-gltf-file-formats--github-logo-version-control-system-vcs-coding-lang-pack-logos-icons-7578021.png?f=webp" alt="html" />
               </div>
-
-              {/* Title */}
-              <h2 className="font-bold text-xl text-gray-800 py-4">
-                HTML Specialist
-              </h2>
-
-              {/* Progress Bar */}
-              <div className="w-full bg-gray-300 rounded-full h-3 mt-4">
-                <motion.div
-                  initial={{ width: "0%" }}
-                  animate={{ width: `${90}%` }}
-                  transition={{ duration: 1.5 }}
-                  className="h-3 bg-blue-500 rounded-full"
-                ></motion.div>
-              </div>
-
-              {/* 90 Percentage */}
-              <p className="mt-2 text-gray-600 font-semibold">{90}% Mastery</p>
             </motion.div>
 
             <motion.div
@@ -105,35 +407,25 @@ const Skill = () => {
                 boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
               }}
               transition={{ duration: 0.3 }}
-              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
+              className="p-10  rounded-xl  text-center relative overflow-hidden"
             >
               {/* Animated Border Circle */}
-              <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
+              <div className="relative w-32 h-32 rounded-full shadow-2xl mx-auto flex justify-center items-center">
                 <motion.div
                   animate={{ rotate: 360 }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                  transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
                   className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
                 ></motion.div>
-                <img className="w-24 relative z-10" src={cssImg} alt="html" />
+                <img
+                  className="w-16 relative z-10"
+                  src="https://cdn3d.iconscout.com/3d/free/thumb/free-github-3d-icon-download-in-png-blend-fbx-gltf-file-formats--twitter-logo-social-media-pack-logos-icons-7516837.png?f=webp"
+                  alt="html"
+                />
               </div>
-
-              {/* Title */}
-              <h2 className="font-bold text-xl text-gray-800 py-4">
-                CSS Expertise
-              </h2>
-
-              {/* Progress Bar */}
-              <div className="w-full bg-gray-300 rounded-full h-3 mt-4">
-                <motion.div
-                  initial={{ width: "0%" }}
-                  animate={{ width: `${80}%` }}
-                  transition={{ duration: 1.5 }}
-                  className="h-3 bg-blue-500 rounded-full"
-                ></motion.div>
-              </div>
-
-              {/* 90 Percentage */}
-              <p className="mt-2 text-gray-600 font-semibold">{80}% Mastery</p>
             </motion.div>
 
             <motion.div
@@ -142,71 +434,25 @@ const Skill = () => {
                 boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
               }}
               transition={{ duration: 0.3 }}
-              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
+              className="p-10  rounded-xl  text-center relative overflow-hidden"
             >
               {/* Animated Border Circle */}
-              <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
+              <div className="relative w-32 h-32 rounded-full shadow-2xl mx-auto flex justify-center items-center">
                 <motion.div
                   animate={{ rotate: 360 }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                  transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
                   className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
                 ></motion.div>
-                <img className="w-24 relative z-10" src={tailwindImg} alt="html" />
+                <img
+                  className="w-16 relative z-10"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg0zbUROVF8IH-i4uqbYTUJcaUvhXr9qBjvQ&s"
+                  alt="html"
+                />
               </div>
-
-              {/* Title */}
-              <h2 className="font-bold text-xl text-gray-800 py-4">
-                Tailwind Expert
-              </h2>
-
-              {/* Progress Bar */}
-              <div className="w-full bg-gray-300 rounded-full h-3 mt-4">
-                <motion.div
-                  initial={{ width: "0%" }}
-                  animate={{ width: `${70}%` }}
-                  transition={{ duration: 1.5 }}
-                  className="h-3 bg-blue-500 rounded-full"
-                ></motion.div>
-              </div>
-
-              {/* 90 Percentage */}
-              <p className="mt-2 text-gray-600 font-semibold">{70}% Mastery</p>
-            </motion.div>
-           <motion.div
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
-              }}
-              transition={{ duration: 0.3 }}
-              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
-            >
-              {/* Animated Border Circle */}
-              <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-                  className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
-                ></motion.div>
-                <img className="w-24 relative z-10" src={jsImg} alt="html" />
-              </div>
-
-              {/* Title */}
-              <h2 className="font-bold text-xl text-gray-800 py-4">
-                Javascript Specialist
-              </h2>
-
-              {/* Progress Bar */}
-              <div className="w-full bg-gray-300 rounded-full h-3 mt-4">
-                <motion.div
-                  initial={{ width: "0%" }}
-                  animate={{ width: `${80}%` }}
-                  transition={{ duration: 1.5 }}
-                  className="h-3 bg-blue-500 rounded-full"
-                ></motion.div>
-              </div>
-
-              {/* 90 Percentage */}
-              <p className="mt-2 text-gray-600 font-semibold">{80}% Mastery</p>
             </motion.div>
 
             <motion.div
@@ -215,35 +461,25 @@ const Skill = () => {
                 boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
               }}
               transition={{ duration: 0.3 }}
-              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
+              className="p-10  rounded-xl  text-center relative overflow-hidden"
             >
               {/* Animated Border Circle */}
-              <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
+              <div className="relative w-32 h-32 rounded-full shadow-2xl mx-auto flex justify-center items-center">
                 <motion.div
                   animate={{ rotate: 360 }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                  transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
                   className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
                 ></motion.div>
-                <img className="w-24 relative z-10" src={reactImg} alt="html" />
+                <img
+                  className="w-16 relative z-10"
+                  src="https://cdn3d.iconscout.com/3d/free/thumb/free-visual-studio-code-3d-icon-download-in-png-blend-fbx-gltf-file-formats--microsoft-logo-python-java-c-coding-lang-pack-logos-icons-7578027.png"
+                  alt="html"
+                />
               </div>
-
-              {/* Title */}
-              <h2 className="font-bold text-xl text-gray-800 py-4">
-                React Developer
-              </h2>
-
-              {/* Progress Bar */}
-              <div className="w-full bg-gray-300 rounded-full h-3 mt-4">
-                <motion.div
-                  initial={{ width: "0%" }}
-                  animate={{ width: `${75}%` }}
-                  transition={{ duration: 1.5 }}
-                  className="h-3 bg-blue-500 rounded-full"
-                ></motion.div>
-              </div>
-
-              {/* 90 Percentage */}
-              <p className="mt-2 text-gray-600 font-semibold">{75}% Mastery</p>
             </motion.div>
 
             <motion.div
@@ -252,181 +488,21 @@ const Skill = () => {
                 boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
               }}
               transition={{ duration: 0.3 }}
-              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
+              className="p-10  rounded-xl  text-center relative overflow-hidden"
             >
               {/* Animated Border Circle */}
-              <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
+              <div className="relative w-32 h-32 rounded-full shadow-2xl mx-auto flex justify-center items-center">
                 <motion.div
                   animate={{ rotate: 360 }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                  transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
                   className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
                 ></motion.div>
-                <img className="w-24 relative z-10" src={mongoImg} alt="html" />
+                <img className="w-16 relative z-10" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEl-1NwtTGDJ5RnK_ntcpb6xft4yceU31uuedAVfvG4M2pQF5BQsoI79VZsNR91irX3U&usqp=CAU" alt="html" />
               </div>
-
-              {/* Title */}
-              <h2 className="font-bold text-xl text-gray-800 py-4">
-              MongoDB Enthusiast
-              </h2>
-
-              {/* Progress Bar */}
-              <div className="w-full bg-gray-300 rounded-full h-3 mt-4">
-                <motion.div
-                  initial={{ width: "0%" }}
-                  animate={{ width: `${85}%` }}
-                  transition={{ duration: 1.5 }}
-                  className="h-3 bg-blue-500 rounded-full"
-                ></motion.div>
-              </div>
-
-              {/* 90 Percentage */}
-              <p className="mt-2 text-gray-600 font-semibold">{85}% Mastery</p>
-            </motion.div>
-
-            <motion.div
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
-              }}
-              transition={{ duration: 0.3 }}
-              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
-            >
-              {/* Animated Border Circle */}
-              <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-                  className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
-                ></motion.div>
-                <img className="w-24 relative z-10" src={nodejsImg} alt="html" />
-              </div>
-
-              {/* Title */}
-              <h2 className="font-bold text-xl text-gray-800 py-4">
-                Node.js Developer
-              </h2>
-
-              {/* Progress Bar */}
-              <div className="w-full bg-gray-300 rounded-full h-3 mt-4">
-                <motion.div
-                  initial={{ width: "0%" }}
-                  animate={{ width: `${65}%` }}
-                  transition={{ duration: 1.5 }}
-                  className="h-3 bg-blue-500 rounded-full"
-                ></motion.div>
-              </div>
-
-              {/* 90 Percentage */}
-              <p className="mt-2 text-gray-600 font-semibold">{65}% Mastery</p>
-            </motion.div>
-
-            <motion.div
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
-              }}
-              transition={{ duration: 0.3 }}
-              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
-            >
-              {/* Animated Border Circle */}
-              <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-                  className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
-                ></motion.div>
-                <img className="w-24 relative z-10" src={firebaseImg} alt="html" />
-              </div>
-
-              {/* Title */}
-              <h2 className="font-bold text-xl text-gray-800 py-4">
-                Firebase Developer
-              </h2>
-
-              {/* Progress Bar */}
-              <div className="w-full bg-gray-300 rounded-full h-3 mt-4">
-                <motion.div
-                  initial={{ width: "0%" }}
-                  animate={{ width: `${70}%` }}
-                  transition={{ duration: 1.5 }}
-                  className="h-3 bg-blue-500 rounded-full"
-                ></motion.div>
-              </div>
-
-              {/* 90 Percentage */}
-              <p className="mt-2 text-gray-600 font-semibold">{70}% Mastery</p>
-            </motion.div>
-
-             <motion.div
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
-              }}
-              transition={{ duration: 0.3 }}
-              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
-            >
-              {/* Animated Border Circle */}
-              <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-                  className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
-                ></motion.div>
-                <img className="w-24 relative z-10" src={expressImg} alt="html" />
-              </div>
-
-              {/* Title */}
-              <h2 className="font-bold text-xl text-gray-800 py-4">
-                Express.js Developer
-              </h2>
-
-              {/* Progress Bar */}
-              <div className="w-full bg-gray-300 rounded-full h-3 mt-4">
-                <motion.div
-                  initial={{ width: "0%" }}
-                  animate={{ width: `${65}%` }}
-                  transition={{ duration: 1.5 }}
-                  className="h-3 bg-blue-500 rounded-full"
-                ></motion.div>
-              </div>
-              {/* 90 Percentage */}
-              <p className="mt-2 text-gray-600 font-semibold">{65}% Mastery</p>
-            </motion.div>
-
-            <motion.div
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
-              }}
-              transition={{ duration: 0.3 }}
-              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
-            >
-              {/* Animated Border Circle */}
-              <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-                  className="absolute w-full h-full border-t-4 border-b-4 border-blue-500 rounded-full"
-                ></motion.div>
-                <img className="w-24 relative z-10" src={jwtImg} alt="html" />
-              </div>
-
-              {/* Title */}
-              <h2 className="font-bold text-xl text-gray-800 py-4">
-                JWT Specialist
-              </h2>
-
-              {/* Progress Bar */}
-              <div className="w-full bg-gray-300 rounded-full h-3 mt-4">
-                <motion.div
-                  initial={{ width: "0%" }}
-                  animate={{ width: `${65}%` }}
-                  transition={{ duration: 1.5 }}
-                  className="h-3 bg-blue-500 rounded-full"
-                ></motion.div>
-              </div>
-              {/* 90 Percentage */}
-              <p className="mt-2 text-gray-600 font-semibold">{65}% Mastery</p>
             </motion.div>
           </div>
         </div>
