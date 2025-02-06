@@ -14,8 +14,10 @@ const Main = () => {
     });
   }, []);
   return (
-    <div className="bg-fixed ">
-      <Navbar></Navbar>
+    <div className="">
+      <div className="">
+        <Navbar></Navbar>
+      </div>
       <div className="min-h-[600px]">
         <Outlet></Outlet>
       </div>

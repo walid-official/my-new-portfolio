@@ -32,7 +32,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-11/12 mx-auto">
+    <div className="md:w-11/12 mx-auto">
       <div className="">
         <div
           className="mt-6 lg:w-[30%] md:w-[40%] sm:w-[80%] mx-auto p-6 relative overflow-hidden group"
@@ -81,8 +81,8 @@ const Contact = () => {
       </div>
 
       <div className="">
-        <div className="flex my-20 w-[80%] mx-auto">
-          <div className="card rounded-none  w-[50%] shadow-2xl">
+        <div className="lg:flex my-20 lg:w-[80%] w-[90%]  mx-auto">
+          <div className="card rounded-none  lg:w-[50%] w-[90%]  shadow-2xl">
             <form ref={form} onSubmit={sendEmail} className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -127,26 +127,26 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          <div className="w-[50%] bg-[#00a4e0] text-white p-10 shadow-2xl">
+          <div className="lg:w-[50%] w-[90%] bg-[#00a4e0] text-white p-10 shadow-2xl">
             <div className="flex items-center h-96">
               <div className="space-y-6">
-                <div className="flex gap-4 items-center">
+                <div className="lg:flex gap-4 items-center">
                   <button className="text-2xl"><IoLocationSharp></IoLocationSharp></button>
-                  <div className="mt-10">
+                  <div className="lg:mt-10 mt-5">
                     <h2 className="font-bold text-xl">Address</h2>
                     <p>Shantibag, Malotinagar, Bogura, <br /> Rajshahi, Bangladesh</p>
                   </div>
                 </div>
-                <div className="flex gap-4 items-center">
+                <div className="lg:flex gap-4 items-center">
                   <button className="text-2xl"><RiWhatsappFill></RiWhatsappFill></button>
-                  <div className="mt-5">
+                  <div className="lg:mt-5 mt-5">
                     <h2 className="font-bold text-xl">Lets Talk</h2>
                     <p>+880 1310870388</p>
                   </div>
                 </div>
-                <div className="flex gap-4 items-center">
+                <div className="lg:flex gap-4 items-center">
                   <button className="text-2xl"><MdEmail></MdEmail></button>
-                  <div className="mt-5">
+                  <div className="lg:mt-5 mt-5">
                     <h2 className="font-bold text-xl">General Support</h2>
                     <p>walid.official8@gmail.com</p>
                   </div>
