@@ -1,5 +1,5 @@
 import React from "react";
-import footerLogo from "../../assets/images/logo.png";
+import footerLogo from "/my-logo.png";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { RiGithubLine } from "react-icons/ri";
@@ -11,16 +11,17 @@ const Footer = () => {
           <div className="w-20 h-20 rounded-full flex justify-center items-center boxShadow">
             <img className="" src={footerLogo} alt="" />
           </div>
-          <p className="font-bold text-xl">
+          <p className="font-bold text-3xl">
             Walid Hasan
             <br />
-            Serving Bogura, Rajshahi with dedication and excellence
+            <span className="text-xl">Serving Bogura, Rajshahi with dedication and excellence</span>
+            
           </p>
           <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
         </aside>
         <nav>
           <div className="grid grid-flow-col gap-4">
-            <div className="flex gap-4 text-black">
+            <div className="flex gap-4 text-white">
               <div className="boxShadow w-12 h-12 rounded-full flex justify-center items-center">
                 <a href="">
                   <FaLinkedinIn></FaLinkedinIn>

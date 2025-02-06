@@ -1,9 +1,12 @@
 import { useRef } from "react";
-import contactImg from "../../assets/images/world.png";
-import { motion } from "framer-motion";
+// import contactImg from "../../assets/images/world.png";
+// import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import ContactBorder from "../ContactBorder/ContactBorder";
-
+// import ContactBorder from "../ContactBorder/ContactBorder";
+import { IoLocationSharp } from "react-icons/io5";
+import { RiWhatsappFill } from "react-icons/ri";
+import { MdEmail } from "react-icons/md";
+import toast from "react-hot-toast";
 const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
@@ -18,7 +21,8 @@ const Contact = () => {
       .then(
         (result) => {
           console.log("SUCCESS!", result.text);
-          alert("Email sent successfully!");
+          toast.success("Email sent successfully!");
+          form.current.reset(); 
         },
         (error) => {
           console.error("FAILED...", error.text);
@@ -28,8 +32,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="overflow-x-hidden">
-     
+    <div className="w-11/12 mx-auto">
       <div className="">
         <div
           className="mt-6 lg:w-[30%] md:w-[40%] sm:w-[80%] mx-auto p-6 relative overflow-hidden group"
@@ -75,28 +78,11 @@ const Contact = () => {
             Get In Touch
           </h2>
         </div>
-       
       </div>
-      
-      <div className="hero min-h-screen">
-        <div className="hero-content text-black flex-col lg:flex-row-reverse">
-          <div className="w-[55%] flex justify-center items-center">
-            <motion.img
-              className="w-[55%]"
-              animate={{
-                rotate: 360, // Rotation in degrees
-              }}
-              transition={{
-                repeat: Infinity, // Repeat infinitely
-                repeatType: "loop", // Loop the animation
-                duration: 16, // Adjust the speed (in seconds)
-                ease: "linear", // Smooth animation
-              }}
-              src={contactImg}
-              alt=""
-            />
-          </div>
-          <div className="card boxShadow   w-full max-w-lg shrink-0 shadow-2xl">
+
+      <div className="">
+        <div className="flex my-20 w-[80%] mx-auto">
+          <div className="card rounded-none  w-[50%] shadow-2xl">
             <form ref={form} onSubmit={sendEmail} className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -106,7 +92,7 @@ const Contact = () => {
                   type="name"
                   placeholder="Name"
                   name="from_name"
-                  className="boxShadow p-4 rounded-md"
+                  className="border-b-2 p-4 rounded-md"
                   required
                 />
               </div>
@@ -118,7 +104,7 @@ const Contact = () => {
                   type="email"
                   name="from_name"
                   placeholder="Email"
-                  className="boxShadow  p-4 rounded-md"
+                  className="border-b-2  p-4 rounded-md"
                   required
                 />
               </div>
@@ -130,16 +116,43 @@ const Contact = () => {
                   type="text"
                   name="message"
                   placeholder="Message"
-                  className="boxShadow  p-6 pb-14 rounded-md"
+                  className="border-b-2  p-6 pb-14 rounded-md"
                   required
                 />
               </div>
               <div className="form-control mt-6">
-                <button className="boxShadow px-10 py-4 rounded-full text-black shadow-2xl">
+                <button className="border-b-2 px-10 py-4 rounded-full text-black border">
                   Send Message
                 </button>
               </div>
             </form>
+          </div>
+          <div className="w-[50%] bg-[#00a4e0] text-white p-10 shadow-2xl">
+            <div className="flex items-center h-96">
+              <div className="space-y-6">
+                <div className="flex gap-4 items-center">
+                  <button className="text-2xl"><IoLocationSharp></IoLocationSharp></button>
+                  <div className="mt-10">
+                    <h2 className="font-bold text-xl">Address</h2>
+                    <p>Shantibag, Malotinagar, Bogura, <br /> Rajshahi, Bangladesh</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-center">
+                  <button className="text-2xl"><RiWhatsappFill></RiWhatsappFill></button>
+                  <div className="mt-5">
+                    <h2 className="font-bold text-xl">Lets Talk</h2>
+                    <p>+880 1310870388</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-center">
+                  <button className="text-2xl"><MdEmail></MdEmail></button>
+                  <div className="mt-5">
+                    <h2 className="font-bold text-xl">General Support</h2>
+                    <p>walid.official8@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

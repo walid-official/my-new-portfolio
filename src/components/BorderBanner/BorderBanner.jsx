@@ -2,7 +2,7 @@ import React from "react";
 
 const BorderBanner = () => {
   return (
-    <div className="flex justify-center items-center mb-20 w-[80%] mx-auto">
+    <div className="flex justify-center items-center mb-20 w-[85%] mx-auto">
       <div className="">
         <p
           className="font-bold text-6xl text-center leading-normal"
@@ -11,7 +11,7 @@ const BorderBanner = () => {
             WebkitTextStroke: "2px black",
           }}
         >
-          Dynamic UIs with <span>React & Tailwind</span> , secure APIs with Node.js & MongoDB.
+          Dynamic UIs with <span className="text-black">React & Tailwind</span> , secure APIs with Node.js & MongoDB.
         </p>
       </div>
     </div>
