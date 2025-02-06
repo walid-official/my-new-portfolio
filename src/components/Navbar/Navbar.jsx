@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import navLogo from "../../assets/images/logo.png";
+import navLogo from "../../../public/my-logo.png";
 import { IoHome } from "react-icons/io5";
 import { FaPersonDotsFromLine } from "react-icons/fa6";
 import { GiSkills } from "react-icons/gi";
@@ -23,50 +23,98 @@ const Navbar = () => {
     <>
       <li
         onClick={() => scrollToSection("home")}
-        className="text-black tooltip tooltip-left hover:cursor-pointer font-medium bg-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center"
-        data-tip="Home"
+        className="text-black  hover:cursor-pointer font-medium bg-white  shadow-2xl flex items-center justify-center"
       >
-        <IoHome className="text-2xl block" />
+        Home
       </li>
       <li
         onClick={() => scrollToSection("about")}
-        className="text-black tooltip tooltip-left hover:cursor-pointer font-medium bg-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center"
+        className="text-black  hover:cursor-pointer font-medium bg-white  shadow-2xl flex items-center justify-center"
         data-tip="About"
       >
-        <FaPersonDotsFromLine className="text-2xl" />
+        About
       </li>
       <li
         onClick={() => scrollToSection("skill")}
-        className="text-black tooltip tooltip-left hover:cursor-pointer font-medium bg-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center"
+        className="text-black  hover:cursor-pointer font-medium bg-white  shadow-2xl flex items-center justify-center"
         data-tip="Skill"
       >
-        <GiSkills className="text-2xl" />
+        Skill
       </li>
       <li
         onClick={() => scrollToSection("myProject")}
-        className="text-black tooltip tooltip-left hover:cursor-pointer font-medium bg-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center"
+        className="text-black  hover:cursor-pointer font-medium bg-white  shadow-2xl flex items-center justify-center"
         data-tip="Project"
       >
-        <FaProjectDiagram className="text-2xl" />
+        Project
       </li>
       <li
         onClick={() => scrollToSection("contact")}
-        className="text-black tooltip tooltip-left hover:cursor-pointer font-medium bg-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center"
+        className="text-black  hover:cursor-pointer font-medium bg-white  shadow-2xl flex items-center justify-center"
         data-tip="Contact"
       >
-        <MdContactMail className="text-2xl" />
+        Contact
       </li>
     </>
   );
 
   return (
-    <nav className="w-11/12 mx-auto">
-      <div className="navbar flex justify-between items-center py-4">
+    <nav className="w-[85%] mx-auto">
+      <div className="flex items-center justify-between ">
         {/* Logo */}
-        <img src={navLogo} alt="Logo" className="h-10 w-auto" />
+        <div className="">
+          <img src={navLogo} alt="Logo" className="h-10 w-auto" />
+        </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:block space-y-4 mr-4">{links}</ul>
+        <div className="ml-32">
+          <ul className="hidden lg:flex gap-12">{links}</ul>
+        </div>
+        <div className="">
+          <a
+            href="https://docs.google.com/document/d/1cC_a_sEV_LUGmUvdnXGFEXXkNLDcnkuhn3G3prfDc6k/export?format=docx"
+            download
+            className="relative px-8 py-3 my-4 mx-auto flex justify-center items-center overflow-hidden rounded-full border-l-4 border-r-4 border-blue-400 bg-white shadow-xl transition-all duration-500 group hover:shadow-2xl"
+            style={{
+              background:
+                "linear-gradient(145deg, rgba(255,255,255,0.9), rgba(229,231,235,0.9))",
+              boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.2)",
+              transform: "perspective(1000px)",
+            }}
+          >
+            {/* Glow Effect */}
+            <div
+              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              style={{
+                background:
+                  "radial-gradient(circle at center, rgba(59, 130, 246, 0.2), transparent 70%)",
+              }}
+            ></div>
+
+            {/* Animated Border */}
+            <div
+              className="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-blue-400 transition-all duration-500"
+              style={{
+                animation: "spin 5s linear infinite",
+              }}
+            ></div>
+
+            {/* Button Text */}
+            <span
+              className="relative z-10 font-bold text-lg text-black transition-all duration-500 group-hover:text-blue-600"
+              style={{
+                background:
+                  "linear-gradient(45deg, rgba(59, 130, 246, 1), rgba(147, 51, 234, 1))",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+                color: "transparent",
+                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
+              }}
+            >
+              Download CV
+            </span>
+          </a>
+        </div>
 
         {/* Mobile Menu Toggle */}
         <button

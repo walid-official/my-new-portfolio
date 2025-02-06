@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import MyProject from "./MyProject";
+import ContactBorder from "../ContactBorder/ContactBorder";
 
 const MyProjects = () => {
     const [projects,setProjects] = useState([]);
@@ -11,7 +12,7 @@ const MyProjects = () => {
         })
     },[])
   return (
-    <div className="lg:w-[80%] w-[90%] mx-auto">
+    <div className="lg:w-[90%] w-[90%] mx-auto">
       <div
           className="mt-6 lg:w-[30%] md:w-[40%] sm:w-[80%] mx-auto p-6 relative overflow-hidden group"
           style={{
@@ -56,10 +57,13 @@ const MyProjects = () => {
             My Projects
           </h2>
         </div>
-      <div className="grid md:grid-cols-2 gap-6 pt-20">
+      <div className="grid md:grid-cols-3 gap-6 pt-20">
         {
             projects.map((project,index) => <MyProject key={index} project={project}></MyProject> )
         }
+      </div>
+      <div className="mt-10">
+        <ContactBorder></ContactBorder>
       </div>
     </div>
   );

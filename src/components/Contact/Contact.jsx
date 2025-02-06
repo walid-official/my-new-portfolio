@@ -2,6 +2,7 @@ import { useRef } from "react";
 import contactImg from "../../assets/images/world.png";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import ContactBorder from "../ContactBorder/ContactBorder";
 
 const Contact = () => {
   const form = useRef();
@@ -28,8 +29,9 @@ const Contact = () => {
 
   return (
     <div className="overflow-x-hidden">
-      <div className="pt-20">
-      <div
+     
+      <div className="">
+        <div
           className="mt-6 lg:w-[30%] md:w-[40%] sm:w-[80%] mx-auto p-6 relative overflow-hidden group"
           style={{
             background:
@@ -73,7 +75,9 @@ const Contact = () => {
             Get In Touch
           </h2>
         </div>
+       
       </div>
+      
       <div className="hero min-h-screen">
         <div className="hero-content text-black flex-col lg:flex-row-reverse">
           <div className="w-[55%] flex justify-center items-center">

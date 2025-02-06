@@ -3,6 +3,7 @@ import aboutImg from "../../assets/images/about2.png";
 import nodeJs from "../../assets/images/skills/nodejs.png";
 import reactJs from "../../assets/images/skills/react.png";
 import { motion } from "framer-motion";
+import BorderAbout from "../BorderAbout/BorderAbout";
 const About = () => {
   return (
     <div className="">
@@ -276,6 +277,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <BorderAbout></BorderAbout>
     </div>
   );
 };

@@ -6,21 +6,24 @@ import { FaNodeJs } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { RiGithubLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
-
+import { FaLink } from "react-icons/fa6";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import ContactBorder from "../ContactBorder/ContactBorder";
 const MyProject = ({ project }) => {
-  const { name, image, description,id,liveLink,clientLink,serverLink } = project || {};
+  const { name, image, description, id, liveLink, clientLink, serverLink } =
+    project || {};
   return (
-    <div className="card boxShadow  shadow-xl">
-      <figure>
-        <img className="" src={image} alt="Shoes" />
+    <div className="shadow-xl hover:scale-105 duration-500 rounded-md">
+      <figure className="border-b">
+        <img className="rounded-md" src={image} alt="Shoes" />
       </figure>
-      <div className="card-body">
-        <div className="md:flex justify-between">
-          <h2 className="card-title text-black font-bold text-2xl">{name}</h2>
-          <div className="flex gap-2 space-y-3 md:space-y-0 text-black">
+      <div className="p-6">
+        <div className="">
+          <h2 className="card-title text-black font-bold text-2xl py-4">{name}</h2>
+          <div className="flex gap-2 text-black pb-4">
             <div className="pt-3 md:pt-0">
               <motion.div
-                className="boxShadow flex justify-center items-center w-10 h-10 rounded-full"
+                className=" flex justify-center items-center w-10 h-10 rounded-full"
                 animate={{
                   rotate: 360, // Rotation in degrees
                 }}
@@ -34,39 +37,56 @@ const MyProject = ({ project }) => {
                 <FaReact></FaReact>
               </motion.div>
             </div>
-            <div className="boxShadow flex justify-center items-center w-10 h-10 rounded-full">
+            <div className=" flex justify-center items-center w-10 h-10 rounded-full">
               <DiMongodb></DiMongodb>
             </div>
-            <div className="boxShadow flex justify-center items-center w-10 h-10 rounded-full">
+            <div className=" flex justify-center items-center w-10 h-10 rounded-full">
               <SiExpress></SiExpress>
             </div>
-            <div className="boxShadow flex justify-center items-center w-10 h-10 rounded-full">
+            <div className=" flex justify-center items-center w-10 h-10 rounded-full">
               <FaNodeJs></FaNodeJs>
             </div>
           </div>
         </div>
-        <p className="text-black py-3">{description}</p>
-        <div className="lg:flex justify-between">
+        <p className="text-black text-justify">{description}</p>
+        <div className="flex items-center pt-3">
           <div className="">
-            <div className=" space-y-4">
-              <a href={liveLink} target="_blank" className="boxShadow block text-center px-5 py-3 rounded-full text-black shadow-2xl">
-                Live link
-              </a>
-              <NavLink to={`DetailsProject/${id}`} className="boxShadow block text-center px-5 py-3 rounded-full text-black shadow-2xl">
-                Read More
-              </NavLink>
-            </div>
+            <a
+              href={liveLink}
+              target="_blank"
+              className=" text-center  text-black"
+            >
+              <FaLink></FaLink>
+            </a>
           </div>
-          <div className="mt-10 lg:mt-0 space-y-4  gap-2">
-            <div className="boxShadow  flex justify-center rounded-full cursor-pointer">
-              <a href={clientLink} target="_blank" className="flex items-center px-7 py-3">
+          <div className="">
+            <NavLink
+              to={`DetailsProject/${id}`}
+              className=" block text-center px-5 py-3 rounded-full text-black"
+            >
+              <FaExternalLinkAlt></FaExternalLinkAlt>
+            </NavLink>
+          </div>
+          <div className="">
+            <div className="  flex justify-center rounded-full cursor-pointer">
+              <a
+                href={clientLink}
+                target="_blank"
+                className="flex gap-2 items-center px-7 py-3"
+              >
                 {" "}
                 <RiGithubLine></RiGithubLine>
                 Client
               </a>
             </div>
-            <div className="boxShadow flex justify-center rounded-full cursor-pointer">
-              <a href={serverLink} target="_blank" className="flex items-center px-7 py-3">
+          </div>
+          <div className="">
+            <div className=" flex justify-center rounded-full cursor-pointer">
+              <a
+                href={serverLink}
+                target="_blank"
+                className="flex gap-2 items-center px-7 py-3"
+              >
                 {" "}
                 <RiGithubLine></RiGithubLine>
                 Server
@@ -75,6 +95,7 @@ const MyProject = ({ project }) => {
           </div>
         </div>
       </div>
+     
     </div>
   );
 };

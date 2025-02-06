@@ -25,7 +25,7 @@ const Banner = () => {
 
   return (
     <div className="relative">
-      <div className="absolute right-80 top-40 rotate-12 ">
+      <div className="absolute right-80 top-20 rotate-12 ">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -42,7 +42,7 @@ const Banner = () => {
           alt=""
         />
       </div>
-      <div className="absolute left-80 top-60 rotate-12 ">
+      <div className="absolute left-80 top-40 rotate-12 ">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -91,45 +91,17 @@ const Banner = () => {
           alt=""
         />
       </div>
-      <div className="lg:h-screen w-11/12 mx-auto">
+      <div className="w-11/12 mx-auto">
         <div className="lg:flex items-center lg:h-screen flex-row-reverse justify-around ">
-          <div className="  p-10 lg:w-[70%] w-[90%] flex flex-col justify-center items-center" >
-            <div
-              className="flex gap-2 items-center relative"
-              data-aos="slide-right"
-              data-aos-mirror="false"
-              data-aos-once="false"
-            >
-              <h1
-                className="font-extrabold text-4xl md:text-6xl lg:text-7xl text-transparent bg-clip-text transition-all duration-500 ease-in-out"
-                style={{
-                  background:
-                    "linear-gradient(45deg, rgba(59, 130, 246, 1), rgba(147, 51, 234, 1))",
-                  WebkitBackgroundClip: "text",
-                  backgroundClip: "text",
-                  color: "transparent",
-                  textShadow: "2px 2px 20px rgba(0, 0, 20, 0.2)",
-                }}
-              >
-                Web Developer
-              </h1>
-
-              {/* Glow Effect on Hover */}
-              <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                style={{
-                  background:
-                    "radial-gradient(circle, rgba(75, 85, 99, 0.3), transparent 80%)",
-                }}
-              ></div>
-            </div>
+          <div className=" -mt-6 lg:w-[70%] w-[90%] flex flex-col justify-center items-center" >
+          
 
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               whileHover={{ scale: 1.1 }}
-              className="mt-4 relative flex justify-center"
+              className=" relative flex justify-center"
               data-aos="slide-down"
               data-aos-mirror="false"
               data-aos-once="false"
@@ -324,9 +296,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="fixed bottom-8 right-0 z-10">
-        <Navbar></Navbar>
-      </div>
+     
     </div>
   );
 };

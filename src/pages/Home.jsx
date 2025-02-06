@@ -4,12 +4,16 @@ import About from "../components/About/About";
 import Skill from "../components/Skill/Skill";
 import MyProjects from "../components/Project/MyProjects";
 import Contact from "../components/Contact/Contact";
+import BorderBanner from "../components/BorderBanner/BorderBanner";
 
 const Home = () => {
   return (
     <div>
       <div id="home" className="">
         <Banner></Banner>
+      </div>
+      <div id="home" className="">
+        <BorderBanner></BorderBanner>
       </div>
       <div id="about" className="">
         <About></About>

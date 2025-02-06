@@ -1,6 +1,40 @@
 [
   {
     "id": 1,
+    "image": "https://i.ibb.co.com/xK2PY8FM/Screenshot-2025-02-06-122731.png",
+    "fullImg": "https://i.ibb.co.com/zHQ3CNZr/Fire-Shot-Capture-007-Earn-Money-earnify-life210-surge-sh.png",
+    "liveLink": "https://earnify-life210.surge.sh/",
+    "clientLink": "https://github.com/walid-official/earn-money",
+    "serverLink": "https://github.com/walid-official/earn-money-server",
+    "name": "Earnify - Earning Platform",
+    "description": "This MERN-based project lets users perform, create, and manage micro-tasks while earning coins. It features tailored roles for Workers, Buyers, and Admins, ensuring an engaging tasking experience.",
+    "frontEndDescription": [
+      "The client-side of the micro-tasking platform focuses on delivering an intuitive and responsive user interface. Built with React and styled using Tailwind CSS, it offers a modern, user-friendly design. Users can register and log in using email/password authentication or social logins for quick access to their profiles and task history.",
+
+      "Key features include dynamic task search with advanced filters (category, difficulty, rewards), real-time task updates through WebSockets, and a task tracker that helps users manage their completed and pending tasks efficiently. The platform also features a profile management system where users can update their skills, preferences, and earnings.",
+
+      "React Router enables seamless navigation between pages, while private routes protect sensitive sections, ensuring only authenticated users can access their personal data and task details. The UI is fully responsive across various devices and includes a light/dark mode toggle for enhanced user customization."
+    ],
+    "backEndDescription": [
+      "The server-side of the micro-tasking platform is powered by Node.js with Express, handling all backend logic and data management. User authentication is managed using JWT for secure access to private routes, ensuring data confidentiality and secure transactions.",
+      "The backend connects to a MongoDB database to store user profiles, task listings, submissions, and transaction details. It supports CRUD operations for tasks and submissions, with RESTful API endpoints efficiently managing data requests and responses. Validation and error handling are implemented to maintain data integrity and ensure a reliable user experience..",
+      "The server also manages task recommendation algorithms that analyze user skills and task history to suggest relevant opportunities. Additionally, it handles notifications for new tasks, submission updates, and coin transactions, ensuring timely communication between workers, buyers, and admins."
+    ],
+    "improvement": [
+      "To elevate the micro-tasking platform’s performance and user engagement, several improvements can be made.",
+      "Implementing multi-factor authentication (MFA) will enhance security by adding an extra layer of protection for user accounts, reducing the risk of unauthorized access and safeguarding sensitive data.",
+
+      "Enhancing the task recommendation system with machine learning algorithms can provide more accurate and personalized task suggestions based on user behavior and skills, improving user satisfaction and engagement.",
+      "Introducing a review and rating system for task creators and workers will help users make informed decisions by learning from others’ experiences. This feature will foster a transparent and trustworthy environment for all participants.",
+
+      "Improving the task search functionality with refined filters and sorting options will allow users to find relevant tasks more quickly, making task browsing more efficient. Adding features like task deadlines, reward ranges, and difficulty levels can further enhance the user experience.",
+
+      "Optimizing the platform’s performance by implementing lazy loading for images and other assets will improve load times, ensuring a smoother and more responsive experience. These enhancements will keep the platform efficient and user-friendly as the user base grows."
+    ]
+  },
+
+  {
+    "id": 2,
     "image": "https://i.ibb.co.com/T8x1xkd/Screenshot-2025-01-04-192322.png",
     "image2": "https://i.ibb.co.com/x1gH26h/Screenshot-2025-01-04-153934.png",
     "fullImg": "https://i.ibb.co.com/PNHrh2K/full-edu.png",
@@ -8,7 +42,7 @@
     "clientLink": "https://github.com/programming-hero-web-course2/b10a11-client-side-walid-official",
     "serverLink": "https://github.com/programming-hero-web-course2/b10a11-server-side-walid-official",
     "name": "Educational Service",
-    "description": "A platform designed to connect students with qualified tutors, offering tools to schedule personalized sessions and share educational resources. It supports learning with features like progress tracking, interactive discussions, and access to study materials, catering to diverse educational needs.",
+    "description": "A platform connecting students with qualified tutors, offering personalized sessions, resource sharing, progress tracking, interactive discussions, and study materials to support diverse learning needs.",
     "frontEndDescription": [
       "The client-side of the service-sharing web application is designed with user experience and responsiveness at its core. It includes a smooth and intuitive interface for users to interact with the application. The user interface is built using React and styled with Tailwind CSS, ensuring a sleek and modern design. Users can register and log in via both email/password authentication and Google social login, allowing for quick access. Once logged in, users can manage their own services, add new services, and update or delete existing ones. Additionally, they can browse services posted by others and book them with ease.",
       "Dynamic routing is implemented using React Router to navigate between different pages, ensuring a seamless experience. Private routes are utilized to protect sensitive pages, such as service management, by requiring authentication. The application is fully responsive, making it easily accessible across multiple devices, including mobile phones, tablets, and desktops. Features like a theme toggle for light/dark mode and a dynamic title component enhance the user experience by offering customization options.",
@@ -29,34 +63,7 @@
   },
 
 
-  {
-    "id": 2,
-    "image": "https://i.ibb.co.com/hCgh9C0/Screenshot-2025-01-04-175343.png",
-    "fullImg": "https://i.ibb.co.com/9gvRs7H/localhost-5174-3.png",
-    "liveLink": "https://job-portal86.surge.sh",
-    "clientLink": "https://github.com/walid-official/job-portal",
-    "serverLink": "https://github.com/walid-official/job-portal-server",
-    "name": "Job Finder",
-    "description": "A platform that helps job seekers connect with employers, browse job listings, and apply for positions. It offers advanced search filters, personalized recommendations, and essential resources like resume tools and career advice, making the job search process more efficient and empowering for both seekers and employers.",
-    "frontEndDescription": [
-      "The client-side of the job finder application focuses on delivering an intuitive and responsive user interface. Built with React and styled using Tailwind CSS, it provides a modern and user-friendly design. Users can register and log in using email/password authentication or social logins, enabling quick access to their profiles and job application history.",
-      "Key features include dynamic job search with advanced filters (location, job type, industry), real-time job alerts through WebSockets, and an application tracker that helps users manage their job applications efficiently. The platform also includes a profile management system where users can update their resumes and preferences.",
-      "React Router is used for seamless navigation between pages, and private routes protect sensitive sections, ensuring that only authenticated users can access their personal data and application details. The UI is fully responsive, catering to a diverse range of devices, and includes a theme toggle for light/dark mode to enhance user customization."
-    ],
-    "backEndDescription": [
-      "The server-side of the job finder application is powered by Node.js with Express, handling all the backend logic and data management. User authentication is managed using JWT for secure access to private routes, ensuring user data confidentiality and secure transactions.",
-      "The backend connects to a MongoDB database to store user profiles, job listings, applications, and company details. It supports CRUD operations for jobs and applications, with RESTful API endpoints handling data requests and responses efficiently. Validation and error handling are implemented to maintain data integrity and provide a reliable user experience.",
-      "The server also manages job recommendation algorithms that analyze user preferences and application history to suggest relevant job opportunities. Additionally, it handles notifications for new job postings and application status updates, ensuring timely communication between job seekers and employers."
-    ],
-    "improvement": [
-      "To enhance the job finder application, several improvements can be made to elevate its performance and user engagement.",
-      "Implementing multi-factor authentication (MFA) will enhance security, providing an additional layer of protection for user accounts. This will reduce the risk of unauthorized access and safeguard sensitive user data.",
-      "Enhancing the job recommendation system with machine learning algorithms can offer more accurate and personalized job suggestions based on user behavior and preferences, improving user satisfaction and engagement.",
-      "Introducing a review and rating system for companies will help job seekers make more informed decisions by learning from the experiences of others. This feature can foster a transparent and trustworthy platform for both job seekers and employers.",
-      "Improving the search functionality with more refined filters and sorting options will allow users to find relevant jobs more quickly, making the job search process more efficient. Adding features like job application deadlines and salary ranges can further enhance the user experience.",
-      "Optimizing the platform’s performance by implementing lazy loading for images and other assets will improve load times, providing a smoother and more responsive experience. These improvements will ensure that the platform remains efficient and user-friendly, even as the user base grows."
-    ]
-  },
+  
   {
     "id": 3,
     "image": "https://i.ibb.co.com/FmJjN0X/Screenshot-2025-01-04-185622.png",
@@ -65,7 +72,7 @@
     "clientLink": "https://github.com/walid-official/coffee-store/tree/main/coffee-store-client",
     "serverLink": "https://github.com/walid-official/coffee-store/tree/main/coffee-store-server",
     "name": "Coffee Shop Manager",
-    "description": "A platform for coffee enthusiasts to discover local coffee shops, explore different brewing methods, and connect with fellow coffee lovers. It offers reviews, brewing tips, and a community space for sharing experiences and growing a shared passion for coffee.",
+    "description": "A platform for coffee enthusiasts to discover local shops, explore brewing methods, share reviews, and connect with a community of fellow coffee lovers.",
    "frontEndDescription": [
     "The client-side of the coffee shop manager application is built with a focus on providing a seamless and engaging user experience. Developed using React and styled with Tailwind CSS, it delivers a modern, responsive interface that adapts to various devices. Users can log in to manage daily operations, track orders, and monitor inventory levels.",
     "Key features include a dynamic dashboard that displays real-time sales data, inventory alerts, and order statuses. The platform also offers an employee management system where managers can schedule shifts and track staff performance. Customers can place orders online, view the menu, and leave feedback through an interactive portal.",

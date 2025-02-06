@@ -10,6 +10,7 @@ import expressImg from "../../assets/images/skills/exjs.png";
 import firebaseImg from "../../assets/images/skills/firebase.png";
 import jwtImg from "../../assets/images/skills/jwt.png";
 import { motion } from "framer-motion";
+import BorderSkill from "../BorderSkill/BorderSkill";
 
 const Skill = () => {
   return (
@@ -67,10 +68,10 @@ const Skill = () => {
                 boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
               }}
               transition={{ duration: 0.3 }}
-              className="p-10  rounded-xl  text-center relative overflow-hidden"
+              className="p-10 shadow-2xl   rounded-xl  text-center relative overflow-hidden"
             >
               {/* Animated Border Circle */}
-              <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center  items-center">
+              <div className="relative w-40 h-40 rounded-full mx-auto flex justify-center  items-center">
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
@@ -104,7 +105,7 @@ const Skill = () => {
                 boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
               }}
               transition={{ duration: 0.3 }}
-              className="p-10 bg-white rounded-xl  text-center relative overflow-hidden"
+              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
             >
               {/* Animated Border Circle */}
               <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
@@ -141,7 +142,7 @@ const Skill = () => {
                 boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
               }}
               transition={{ duration: 0.3 }}
-              className="p-10 bg-white rounded-xl  text-center relative overflow-hidden"
+              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
             >
               {/* Animated Border Circle */}
               <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
@@ -177,7 +178,7 @@ const Skill = () => {
                 boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
               }}
               transition={{ duration: 0.3 }}
-              className="p-10 bg-white rounded-xl  text-center relative overflow-hidden"
+              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
             >
               {/* Animated Border Circle */}
               <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
@@ -214,7 +215,7 @@ const Skill = () => {
                 boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
               }}
               transition={{ duration: 0.3 }}
-              className="p-10 bg-white rounded-xl  text-center relative overflow-hidden"
+              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
             >
               {/* Animated Border Circle */}
               <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
@@ -251,7 +252,7 @@ const Skill = () => {
                 boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
               }}
               transition={{ duration: 0.3 }}
-              className="p-10 bg-white rounded-xl  text-center relative overflow-hidden"
+              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
             >
               {/* Animated Border Circle */}
               <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
@@ -288,7 +289,7 @@ const Skill = () => {
                 boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
               }}
               transition={{ duration: 0.3 }}
-              className="p-10 bg-white rounded-xl  text-center relative overflow-hidden"
+              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
             >
               {/* Animated Border Circle */}
               <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
@@ -325,7 +326,7 @@ const Skill = () => {
                 boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
               }}
               transition={{ duration: 0.3 }}
-              className="p-10 bg-white rounded-xl  text-center relative overflow-hidden"
+              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
             >
               {/* Animated Border Circle */}
               <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
@@ -362,7 +363,7 @@ const Skill = () => {
                 boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
               }}
               transition={{ duration: 0.3 }}
-              className="p-10 bg-white rounded-xl  text-center relative overflow-hidden"
+              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
             >
               {/* Animated Border Circle */}
               <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
@@ -398,7 +399,7 @@ const Skill = () => {
                 boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.3)",
               }}
               transition={{ duration: 0.3 }}
-              className="p-10 bg-white rounded-xl  text-center relative overflow-hidden"
+              className="p-10 shadow-2xl  bg-white rounded-xl  text-center relative overflow-hidden"
             >
               {/* Animated Border Circle */}
               <div className="relative w-40 h-40 rounded-full shadow-2xl mx-auto flex justify-center items-center">
@@ -430,6 +431,7 @@ const Skill = () => {
           </div>
         </div>
       </div>
+      <BorderSkill></BorderSkill>
     </div>
   );
 };
