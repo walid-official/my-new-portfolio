@@ -11,6 +11,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { RiGithubLine } from "react-icons/ri";
 import Navbar from "../Navbar/Navbar";
 import "./banner.css";
+import BorderBanner from "../BorderBanner/BorderBanner";
 
 const Banner = () => {
   const handleLinkdin = () => {
@@ -25,8 +26,8 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative">
-      <div className="absolute right-1/4 top-20 rotate-12 hidden sm:block">
+    <div className="relative ">
+      <div className="absolute right-1/4 top-20 rotate-12 hidden md:flex">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -43,7 +44,7 @@ const Banner = () => {
           alt=""
         />
       </div>
-      <div className="absolute left-1/4 top-40 rotate-12 hidden sm:block">
+      <div className="absolute left-1/4 top-40 rotate-12 hidden md:flex">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -59,7 +60,7 @@ const Banner = () => {
           alt=""
         />
       </div>
-      <div className="absolute left-[25%] top-[60%] rotate-12 hidden sm:block">
+      <div className="absolute left-[25%] top-[60%] rotate-12 hidden md:flex">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -75,7 +76,7 @@ const Banner = () => {
           alt=""
         />
       </div>
-      <div className="absolute right-[25%] top-[60%] rotate-12 hidden sm:block">
+      <div className="absolute right-[25%] top-[60%] rotate-12 hidden md:flex">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -93,8 +94,8 @@ const Banner = () => {
         />
       </div>
       <div className="w-11/12 mx-auto">
-        <div className="lg:flex items-center lg:h-screen flex-row-reverse justify-center sm:flex-wrap">
-          <div className="lg:w-[70%] w-[90%] flex flex-col justify-center items-center lg:-mt-20 mt-6">
+        <div className="lg:flex items-center min-h-screen flex-row-reverse justify-center sm:flex-wrap">
+          <div className="lg:w-[70%] flex flex-col justify-center items-center lg:-mt-20 mt-6">
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -119,7 +120,7 @@ const Banner = () => {
             </motion.div>
 
             <div className="flex gap-6 items-center pb-4"></div>
-            <h1 className="text-center font-extrabold text-xl sm:text-5xl md:text-4xl lg:text-5xl leading-tight tracking-wide relative">
+            <h1 className="text-center font-extrabold text-2xl sm:text-5xl md:text-4xl lg:text-5xl leading-tight tracking-wide relative">
               Hi,{" "}
               <span className="inline-block text-blue-600 drop-shadow-lg animate-waving-hand">
                 👋
@@ -249,6 +250,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
+      <BorderBanner></BorderBanner>
     </div>
   );
 };

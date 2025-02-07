@@ -32,10 +32,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="md:w-11/12 mx-auto">
+    <div className="w-11/12 mx-auto">
       <div className="">
         <div
-          className="mt-6 lg:w-[30%] md:w-[40%] sm:w-[80%] mx-auto p-6 relative overflow-hidden group"
+          className="mt-6 lg:w-[30%] md:w-[40%] w-[80%] mx-auto p-6 relative overflow-hidden group"
           style={{
             background:
               "linear-gradient(145deg, rgba(255,255,255,0.9), rgba(229,231,235,0.9))",
@@ -81,8 +81,8 @@ const Contact = () => {
       </div>
 
       <div className="">
-        <div className="lg:flex my-20 lg:w-[80%] w-[90%]  mx-auto">
-          <div className="card rounded-none  lg:w-[50%] w-[90%]  shadow-2xl">
+        <div className="lg:flex my-20 lg:w-[80%] mx-auto">
+          <div className="card rounded-none  lg:w-[50%]  shadow-2xl">
             <form ref={form} onSubmit={sendEmail} className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -127,7 +127,7 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          <div className="lg:w-[50%] w-[90%] bg-[#00a4e0] text-white p-10 shadow-2xl">
+          <div className="lg:w-[50%] bg-[#00a4e0] text-white p-10 shadow-2xl">
             <div className="flex items-center h-96">
               <div className="space-y-6">
                 <div className="lg:flex gap-4 items-center">

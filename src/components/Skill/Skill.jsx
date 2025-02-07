@@ -61,12 +61,12 @@ const Skill = () => {
       </div>
       <div className="py-20">
         <div className=" ">
-          <div className="grid  lg:grid-cols-2 gap-20">
+          <div className="grid  lg:grid-cols-2 grid-cols-1 gap-20">
             <div className="">
               <h2 className="text-4xl pb-10 font-bold text-center">
                 Frontend Skills
               </h2>
-              <div className="grid lg:grid-cols-3 gap-3">
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3">
                 <motion.div
                   whileHover={{
                     scale: 1.05,
@@ -232,7 +232,7 @@ const Skill = () => {
               <h2 className="text-4xl pb-10 font-bold text-center">
                 Backend Skills
               </h2>
-              <div className="grid lg:grid-cols-3 gap-4">
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
                 <motion.div
                   whileHover={{
                     scale: 1.05,
@@ -377,7 +377,7 @@ const Skill = () => {
           <h2 className="text-4xl pb-10 font-bold text-center">
             Tools
           </h2>
-          <div className="grid lg:grid-cols-3 gap-4">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
             <motion.div
               whileHover={{
                 scale: 1.05,

@@ -60,7 +60,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="w-[85%] mx-auto">
+      <nav className="w-[90%] mx-auto">
         <div className="navbar py-4">
           {/* Logo */}
           <div className="navbar-start ">
