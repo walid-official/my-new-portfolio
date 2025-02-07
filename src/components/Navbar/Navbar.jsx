@@ -76,7 +76,7 @@ const Navbar = () => {
           <div className="navbar-end">
             <div className="hidden lg:flex">
               <a
-                href="https://docs.google.com/document/d/1cC_a_sEV_LUGmUvdnXGFEXXkNLDcnkuhn3G3prfDc6k/export?format=docx"
+                href="https://drive.google.com/uc?export=download&id=14araRQsQeCU46VgCFiRsTSZbRyZwBl61"
                 download
                 className="relative px-8 py-3 my-4 mx-auto flex justify-center items-center overflow-hidden rounded-full border-l-4 border-r-4 border-blue-400 bg-white shadow-xl transition-all duration-500 group hover:shadow-2xl"
                 style={{
@@ -177,7 +177,7 @@ const Navbar = () => {
             {links}
             <div className="">
               <a
-                href="https://docs.google.com/document/d/14b_OR9Y2XED0hoakPNAXwylwWegIO4EIy5Tqyq3KZV0/export?format=pdf"
+                href="https://drive.google.com/uc?export=download&id=14araRQsQeCU46VgCFiRsTSZbRyZwBl61"
                 download
                 className="relative px-8 py-3 my-4 mx-auto flex justify-center items-center overflow-hidden rounded-full border-l-4 border-r-4 border-blue-400 bg-white shadow-xl transition-all duration-500 group hover:shadow-2xl"
                 style={{

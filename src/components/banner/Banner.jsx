@@ -94,7 +94,7 @@ const Banner = () => {
         />
       </div>
       <div className="w-11/12 mx-auto">
-        <div className="lg:flex items-center min-h-screen flex-row-reverse justify-center">
+        <div className="lg:flex items-center h-auto lg:pt-32 md:pt-20 pt-0 flex-row-reverse justify-center">
           <div className="lg:w-[70%] flex flex-col justify-center items-center lg:-mt-20 mt-6">
             <motion.div
               initial={{ opacity: 0, y: -20 }}
@@ -226,7 +226,7 @@ const Banner = () => {
               clean code and efficient full-stack solutions
             </p>
             <a
-              href="https://docs.google.com/document/d/14b_OR9Y2XED0hoakPNAXwylwWegIO4EIy5Tqyq3KZV0/export?format=docx"
+              href="https://drive.google.com/uc?export=download&id=14araRQsQeCU46VgCFiRsTSZbRyZwBl61"
               download
               className="relative px-8 py-3 mt-4 mx-auto flex justify-center items-center overflow-hidden rounded-full border-l-4 border-r-4 border-blue-400 bg-white shadow-xl transition-all duration-500 group hover:shadow-2xl"
             >

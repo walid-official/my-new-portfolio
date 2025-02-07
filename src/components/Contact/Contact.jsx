@@ -65,7 +65,7 @@ const Contact = () => {
 
           {/* Title */}
           <h2
-            className="font-bold text-4xl text-center text-black relative z-10"
+            className="font-bold md:text-4xl text-3xl text-center text-black relative z-10"
             style={{
               background:
                 "linear-gradient(45deg, rgba(59, 130, 246, 1), rgba(147, 51, 234, 1))",

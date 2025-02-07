@@ -8,9 +8,9 @@ import { RiGithubLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 import { FaLink } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import ContactBorder from "../ContactBorder/ContactBorder";
+
 const MyProject = ({ project }) => {
-  const { name, image, description, id, liveLink, clientLink, serverLink } =
+  const { name, image, description, id, liveLink, clientLink, serverLink, } =
     project || {};
   return (
     <div className="shadow-xl hover:scale-105 duration-500 rounded-md relative">
@@ -59,14 +59,7 @@ const MyProject = ({ project }) => {
               <FaLink></FaLink>
             </a>
           </div>
-          <div className="absolute md:top-60 top-36  bg-slate-600 right-0 ">
-            <NavLink
-              to={`DetailsProject/${id}`}
-              className=" block text-center px-5 py-3 rounded-full text-white"
-            >
-              <FaExternalLinkAlt></FaExternalLinkAlt>
-            </NavLink>
-          </div>
+         
           <div className="">
             <div className="  flex justify-center rounded-full cursor-pointer">
               <a
@@ -80,7 +73,7 @@ const MyProject = ({ project }) => {
               </a>
             </div>
           </div>
-          <div className="">
+          {/* <div className="">
             <div className=" flex justify-center rounded-full cursor-pointer">
               <a
                 href={serverLink}
@@ -92,6 +85,14 @@ const MyProject = ({ project }) => {
                 Server
               </a>
             </div>
+          </div> */}
+           <div className=" bg-slate-600 rounded-md">
+            <NavLink
+              to={`DetailsProject/${id}`}
+              className=" block text-center px-5 py-3 rounded-full text-white"
+            >
+              View Details
+            </NavLink>
           </div>
         </div>
       </div>
