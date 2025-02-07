@@ -27,7 +27,7 @@ const Banner = () => {
 
   return (
     <div className="relative ">
-      <div className="absolute right-1/4 top-20 rotate-12 hidden md:flex">
+      <div className="md:absolute static right-1/4 top-20 rotate-12 hidden md:flex">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -44,7 +44,7 @@ const Banner = () => {
           alt=""
         />
       </div>
-      <div className="absolute left-1/4 top-40 rotate-12 hidden md:flex">
+      <div className="md:absolute static left-1/4 top-40 rotate-12 hidden md:flex">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -60,7 +60,7 @@ const Banner = () => {
           alt=""
         />
       </div>
-      <div className="absolute left-[25%] top-[60%] rotate-12 hidden md:flex">
+      <div className="md:absolute static left-[25%] top-[48%] rotate-12 hidden md:flex">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -76,7 +76,7 @@ const Banner = () => {
           alt=""
         />
       </div>
-      <div className="absolute right-[25%] top-[60%] rotate-12 hidden md:flex">
+      <div className="md:absolute static right-[25%] top-[48%] rotate-12 hidden md:flex">
         <motion.img
           className="w-16 h-16"
           animate={{
@@ -94,7 +94,7 @@ const Banner = () => {
         />
       </div>
       <div className="w-11/12 mx-auto">
-        <div className="lg:flex items-center min-h-screen flex-row-reverse justify-center sm:flex-wrap">
+        <div className="lg:flex items-center min-h-screen flex-row-reverse justify-center">
           <div className="lg:w-[70%] flex flex-col justify-center items-center lg:-mt-20 mt-6">
             <motion.div
               initial={{ opacity: 0, y: -20 }}
@@ -132,7 +132,7 @@ const Banner = () => {
               </span>
             </h1>
 
-            <div className="py-3 text-center">
+            <div className="py-5 text-center">
               <TypeAnimation
                 sequence={[
                   "A Web Designer",
@@ -144,7 +144,7 @@ const Banner = () => {
                 ]}
                 wrapper="span"
                 speed={50}
-                style={{ fontSize: "1.5em", textAlign: "center" }}
+                className="text-xl md:text-2xl lg:text-3xl xl:text-3xl"
                 repeat={Infinity}
               />
             </div>
